@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Termoesu is the GOAT. **[Termoesu](https://youtube.com/Derek Sol)** [^1].
+Termoesu is the GOAT. **[Termoesu](https://youtube.com/DerekSol)** [^1].
 
 
 

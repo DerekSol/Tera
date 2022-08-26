@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Welcome to my Notebook",
-            "content": "print(&quot;hello&quot;) . Running cells with &#39;Python 3.8.2 64-bit&#39; requires ipykernel package. Run the following command to install &#39;ipykernel&#39; into the Python environment. Command: &#39;/usr/bin/python3 -m pip install ipykernel -U --user --force-reinstall&#39; .",
+            "content": "print(&quot;Hello World!&quot;) . Hello World! .",
             "url": "https://dereksol.github.io/Tera/2022/08/25/Derek.html",
             "relUrl": "/2022/08/25/Derek.html",
             "date": " • Aug 25, 2022"

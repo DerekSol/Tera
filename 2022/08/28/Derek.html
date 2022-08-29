@@ -361,7 +361,8 @@ dmsol you scored 3/3
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;, better luck next time &quot;</span><span class="p">)</span>
+<span class="n">Percentage</span> <span class="o">=</span> <span class="n">correct</span><span class="o">/</span><span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Percentage</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;%&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -384,7 +385,7 @@ Question: What was the name of Simba&#39;s father in the Lion King?
 Mufasa is correct!
 Question: What was the first animated movie to be nominated for Best Picture at the Oscars?
 Beauty and the Beast is correct!
-dmsol you scored 3/4, better luck next time 
+You got 75%
 </pre>
 </div>
 </div>

@@ -69,9 +69,20 @@
 
   
   
+      ,"page0": {
+          "title": "Notes",
+          "content": "AP Gov Notes .",
+          "url": "https://dereksol.github.io/Tera/Notes/",
+          "relUrl": "/Notes/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Derek Sol is the GOAT. DerekSol 1. . An absolute GOAT. &#8617; . |",
           "url": "https://dereksol.github.io/Tera/about/",
@@ -103,7 +114,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://dereksol.github.io/Tera/robots.txt",

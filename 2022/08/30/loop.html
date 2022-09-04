@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -367,6 +367,182 @@ c. Captain America
 d. Captain Marvel
 correct answer, you got 1 point
 Final score is: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">new_game</span><span class="p">():</span>
+    
+    <span class="n">guesses</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">correct_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">question_num</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">options</span><span class="p">[</span><span class="n">question_num</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter (A, B, C, or D): &quot;</span><span class="p">)</span>
+        <span class="n">guess</span> <span class="o">=</span> <span class="n">guess</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="n">guesses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+        
+        <span class="n">correct_guesses</span> <span class="o">+=</span> <span class="n">check_answer</span><span class="p">(</span><span class="n">questions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">),</span><span class="n">guess</span><span class="p">)</span>
+        <span class="n">question_num</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+    <span class="n">display_score</span><span class="p">(</span><span class="n">correct_guesses</span><span class="p">,</span> <span class="n">guesses</span><span class="p">)</span>
+    
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">answer</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">guess</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CORRECT!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;WRONG!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span>
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">display_score</span><span class="p">(</span><span class="n">correct_guesses</span><span class="p">,</span> <span class="n">guesses</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RESULTS&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------&quot;</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answers: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">questions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Guesses:  &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">guesses</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+    
+    <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">correct_guesses</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your score is: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">play_again</span><span class="p">():</span>
+    
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to play again?: (yes or no): &quot;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    
+    <span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="s2">&quot;YES&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+<span class="c1"># -------------------------</span>
+
+
+<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s2">&quot;What is Captain America&#39;s shield made out of?: &quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;How many Infinity Stones are there?: &quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Who lifts Thor&#39;s hammer in Endgame?: &quot;</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Who holds the Time Stone?: &quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">options</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;A. Vibranium&quot;</span><span class="p">,</span> <span class="s2">&quot;B. Copper&quot;</span><span class="p">,</span> <span class="s2">&quot;C. Iron&quot;</span><span class="p">,</span> <span class="s2">&quot;D. Steel&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s2">&quot;A. 4&quot;</span><span class="p">,</span> <span class="s2">&quot;B. 6&quot;</span><span class="p">,</span> <span class="s2">&quot;C. 3&quot;</span><span class="p">,</span> <span class="s2">&quot;D. 2&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s2">&quot;A. Iron Man&quot;</span><span class="p">,</span> <span class="s2">&quot;B. Vision&quot;</span><span class="p">,</span> <span class="s2">&quot;C. Captain America&quot;</span><span class="p">,</span> <span class="s2">&quot;D. Captain Marvel&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s2">&quot;A. Doctor Strange&quot;</span><span class="p">,</span> <span class="s2">&quot;B. Ant-Man&quot;</span><span class="p">,</span> <span class="s2">&quot;C. Vision&quot;</span><span class="p">,</span> <span class="s2">&quot;D. Thor&quot;</span><span class="p">]]</span>
+
+<span class="n">new_game</span><span class="p">()</span>
+
+<span class="k">while</span> <span class="n">play_again</span><span class="p">():</span>
+    <span class="n">new_game</span><span class="p">()</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bye!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-------------------------
+What is Captain America&#39;s shield made out of?: 
+A. Vibranium
+B. Copper
+C. Iron
+D. Steel
+CORRECT!
+-------------------------
+How many Infinity Stones are there?: 
+A. 4
+B. 6
+C. 3
+D. 2
+CORRECT!
+-------------------------
+Who lifts Thor&#39;s hammer in Endgame?: 
+A. Iron Man
+B. Vision
+C. Captain America
+D. Captain Marvel
+CORRECT!
+-------------------------
+Who holds the Time Stone?: 
+A. Doctor Strange
+B. Ant-Man
+C. Vision
+D. Thor
+CORRECT!
+-------------------------
+RESULTS
+-------------------------
+Answers: A B C A 
+Guesses:  A B C A 
+Your score is: 100%
+-------------------------
+What is Captain America&#39;s shield made out of?: 
+A. Vibranium
+B. Copper
+C. Iron
+D. Steel
+CORRECT!
+-------------------------
+How many Infinity Stones are there?: 
+A. 4
+B. 6
+C. 3
+D. 2
+CORRECT!
+-------------------------
+Who lifts Thor&#39;s hammer in Endgame?: 
+A. Iron Man
+B. Vision
+C. Captain America
+D. Captain Marvel
+CORRECT!
+-------------------------
+Who holds the Time Stone?: 
+A. Doctor Strange
+B. Ant-Man
+C. Vision
+D. Thor
+WRONG!
+-------------------------
+RESULTS
+-------------------------
+Answers: A B C A 
+Guesses:  A B C D 
+Your score is: 75%
+Bye!
 </pre>
 </div>
 </div>

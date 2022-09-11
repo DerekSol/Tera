@@ -1,6 +1,7 @@
 ---
 toc: true
 layout: post
+title: AppLab NBA Quiz and NBA Stats App
 description: partner Applab quiz/other App
 categories: [APCSP Week 3]
 ---

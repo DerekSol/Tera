@@ -10,7 +10,7 @@ categories: [APCSP Week 3]
 *For our outline, Saavan and I wanted to create a quiz revolved around NBA. So we planned out 3 NBA questions that we wanted to use, and started planning out how we want the site to look. We wanted a home screen to introduce the quiz with a start button, 3 separate screens for each question, 2 other screens for if you get the question wrong or right, and a final screen to address that you have won and the results.*
 
 ## Successes
-*This is me breaking down the success of figuring out how to code a button so that it switches to a new screen*
+*This is me breaking down the success of figuring out how to code a button so that it switches to a new screen.*
 ### 1. Program Purpose and Function
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 11.43.10 AM.png) 
 *The purpose of this program is so that the when the button is clicked, it switches the current screen to a new one. The input of this program is the onEvent, where if the start button is clicked, then it will do the function of the set screen, which is the output of screen2, which will change the current screen to that.*

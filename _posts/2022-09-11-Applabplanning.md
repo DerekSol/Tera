@@ -13,7 +13,7 @@ categories: [APCSP Week 3]
 *This is me breaking down the success of figuring out how to code a button so that it switches to a new screen*
 ### 1. Program Purpose and Function
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 11.43.10 AM.png) 
-*The purpose of this program is so that the when the button is clicked, it switches the current screen to a new one. The input of this program is the onEvent, where if the start button is clicked, then it will do the function of the set screen, which is the output of screen2, which will change the current screen to that.
+*The purpose of this program is so that the when the button is clicked, it switches the current screen to a new one. The input of this program is the onEvent, where if the start button is clicked, then it will do the function of the set screen, which is the output of screen2, which will change the current screen to that.*
 ### 2. Data Abstraction
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 12.00.02 PM.png)
 *The name of the variable is start_button. It is representing what needs to be "clicked", in order for the input to work.*

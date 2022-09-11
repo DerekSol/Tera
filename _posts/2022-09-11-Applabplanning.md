@@ -22,7 +22,7 @@ categories: [APCSP Week 3]
 ## Discoveries
 *One discovery that I found was how to code a button so that it switches to a new screen.*
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 11.43.10 AM.png) 
-*Another discovery I found was how to work a dropdown so that if it clicks on certain options it sets the screen to that option*
+*Another discovery I found was how to work a dropdown so that if it clicks on certain options it sets the screen to that option.*
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 11.44.23 AM.png) 
 
 

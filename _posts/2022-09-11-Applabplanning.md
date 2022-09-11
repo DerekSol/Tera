@@ -14,4 +14,4 @@ categories: [APCSP Week 3]
 
 ![]({{site.baseurl}}/images/Screen Shot 2022-09-11 at 11.09.31 AM.png) 
 
-*This picture displays the 6 different screens we had to make, since we had to make a correct and wrong screen for each question,which would rather bring them back to the same question if they got it wrong, or proceed to the next question if they get it right, or the results if they get the final question right.*
+*This picture displays the 6 different screens we had to make, since we had to make a correct and wrong screen for each question, which would rather bring them back to the same question if they got it wrong, or proceed to the next question if they get it right, or the results if they get the final question right.*

@@ -12,10 +12,10 @@ I learned a lot of things from this presentation. Laurie Santos enlightened me o
 My partner Saavan took away a ton of concepts as well. One thing Saavan took from Santos was that helping others help us more than we expect. He can relate to this because he noticed that the more he starts helping and giving to others, the happier his life becomes. Another thing he took away was writing a letter of gratitude to someone. He noticed that people that receive this letter will actually appreciate it more than you will ever know. Giving a letter of gratitude to someone spreads the happiness they bring you to them, which will reciprocate it back.
 
 # What My Group Took Away
-Derek Thoughts: What I found interesting about the video is that everyone deals with stress, and it is not something easy to just deal with. One thing that Laurie Santos was that 40% of the students from her class in Yale said they feel helpless. This really struck me because it puts into perspective how many people deal with some sort of unhappiness and that we are not alone.
+Derek's Thoughts: What I found interesting about the video is that everyone deals with stress, and it is not something easy to just deal with. One thing that Laurie Santos was that 40% of the students from her class in Yale said they feel helpless. This really struck me because it puts into perspective how many people deal with some sort of unhappiness and that we are not alone.
 
-Rohan Thoughts: It was relatable, she mentioned good strategies to reduce stress. The statistics that she said were also very alarming to me. I also believe that stress hinders the ability to learn.
+Rohan's Thoughts: It was relatable, she mentioned good strategies to reduce stress. The statistics that she said were also very alarming to me. I also believe that stress hinders the ability to learn.
 
-Dillon Thoughts: I found it very surprising how much anxiety and stress the average college student has during their time spent in academic environment. It makes me worry about myself and how college life will be like. I also reflect and think about how much correlation it has with high school stress at Del Norte.
+Dillon's Thoughts: I found it very surprising how much anxiety and stress the average college student has during their time spent in academic environment. It makes me worry about myself and how college life will be like. I also reflect and think about how much correlation it has with high school stress at Del Norte.
 
-Saavan Thoughts: I thought it was good to know the things we need to do to relieve stress. I believe that it is very important in working towards living a happier life, and its not as easy as it sounds.
+Saavan's Thoughts: I thought it was good to know the things we need to do to relieve stress. I believe that it is very important in working towards living a happier life, and its not as easy as it sounds.

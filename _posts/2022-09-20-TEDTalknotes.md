@@ -11,6 +11,17 @@ I learned a lot of things from this presentation. Laurie Santos enlightened me o
 ## Note of Gratitude to My Brother
 I wanted to write a note of gratitude to my brother. I just wanted to thank him for listening to personal stuff I can only talk to him about, and helping me better myself in ways. I'm thankful that he takes the time out of his busy day to go to the gym with me if I ask. I also am thankful that he understands and tells me what I need to work on so that I can better myself academically and in my personal growth.
 
+## Gratitude List
+Things Im Grateful for:
+- my parents
+- my brother
+- my friends
+- house
+- food
+- water
+- clothes
+- my dog
+
 # What My Partner Learned
 My partner Saavan took away a ton of concepts as well. One thing Saavan took from Santos was that helping others help us more than we expect. He can relate to this because he noticed that the more he starts helping and giving to others, the happier his life becomes. Another thing he took away was writing a letter of gratitude to someone. He noticed that people that receive this letter will actually appreciate it more than you will ever know. Giving a letter of gratitude to someone spreads the happiness they bring you to them, which will reciprocate it back.
 

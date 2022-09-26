@@ -393,8 +393,8 @@ string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
 <div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a student Array of Person(s)</span>
 <span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span> 
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Derek"</span><span class="p">,</span> <span class="s2">"Senior"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">,</span> <span class="s2">"Front-end Developer"</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Saavan"</span><span class="p">,</span> <span class="s2">"Senior"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">,</span> <span class="s2">"Back-end Developer"</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Rohan"</span><span class="p">,</span> <span class="s2">"Senior"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">,</span> <span class="s2">"DevOps"</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Saavan"</span><span class="p">,</span> <span class="s2">"Senior"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">,</span> <span class="s2">"DevOps"</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Rohan"</span><span class="p">,</span> <span class="s2">"Senior"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">,</span> <span class="s2">"Back-end Developer"</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Dillon"</span><span class="p">,</span> <span class="s2">"Junior"</span><span class="p">,</span> <span class="mf">2024</span><span class="p">,</span> <span class="s2">"Scrum Master"</span><span class="p">),</span>
     
 <span class="p">];</span>
@@ -437,7 +437,7 @@ string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
     name: 'Mr M',
     ghID: 'jm1021',
     classOf: 1977,
-    compscirole: undefined,
+    compscirole: 'Headmaster',
     role: 'Teacher' },
   Person {
     name: 'Derek',
@@ -449,13 +449,13 @@ string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
     name: 'Saavan',
     ghID: 'Senior',
     classOf: 2023,
-    compscirole: 'Back-end Developer',
+    compscirole: 'DevOps',
     role: 'Student' },
   Person {
     name: 'Rohan',
     ghID: 'Senior',
     classOf: 2023,
-    compscirole: 'DevOps',
+    compscirole: 'Back-end Developer',
     role: 'Student' },
   Person {
     name: 'Dillon',
@@ -555,7 +555,7 @@ object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 <td>jm1021</td>
 <td>1977</td>
 <td>Teacher</td>
-<td>undefined</td>
+<td>Headmaster</td>
 </tr>
 <tr></tr>
 <tr>
@@ -571,7 +571,7 @@ object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 <td>Senior</td>
 <td>2023</td>
 <td>Student</td>
-<td>Back-end Developer</td>
+<td>DevOps</td>
 </tr>
 <tr></tr>
 <tr>
@@ -579,7 +579,7 @@ object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 <td>Senior</td>
 <td>2023</td>
 <td>Student</td>
-<td>DevOps</td>
+<td>Back-end Developer</td>
 </tr>
 <tr></tr>
 <tr>

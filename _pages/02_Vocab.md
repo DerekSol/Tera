@@ -19,3 +19,7 @@ permalink: /vocabulary/
 | Pull | To request data back from one place to another |
 | Bash | Another computer language that is used in powershell |
 | Bin | A binary file that is used by different computer applications |
+| Scrum Master | The scrum master helps to facilitate the sprint by ensuring that an agile framework is followed. Responsible on tracking issues and maintaining scrum board. |
+| DevOps | DevOps is the combination of cultural philosophies, practices, and tools that increases an team’s ability to deliver applications and services at high velocity. |
+| Front-end Developer |  A front-end developer builds the front-end portion of websites, the part that users actually see and interact with. |
+| Back-end Developer |  Back-end developers a build and maintain the mechanisms that process data and perform actions like data storage, security, and other server-side functions that you cannot see. |

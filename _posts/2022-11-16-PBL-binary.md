@@ -67,9 +67,9 @@ tags: [html, liquid, javascript]
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
+    const IMAGE_ON = "images/bulb_on.gif";
     const MSG_OFF = "Turn off";
-    const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
+    const IMAGE_OFF = "images/bulb_off.png"
 
     // return string with current value of each bit
     function getBits() {

@@ -5,7 +5,7 @@ toc: true
 categories: [APCSP Week 13]
 ---
 
-# Notes on my Section of teaching
+# Notes on my Section of Teaching
 ### 3.6: Daily Video 1 Notes
 - Learning how to express an algorithm that uses selection without using a programming language, such as flowcharts and pseudo code
 - <mark>Selection determines which part of an algorithm are executed based on a condition being true or false</mark>
@@ -36,3 +36,13 @@ categories: [APCSP Week 13]
 - IF statements allow us to perform specific action based off the condition being true or false
 
 # Lesson Plan Idea
+- <mark>PearDeck</mark> encapsulating 3.5-3.7
+- Each one of us is responsible for teaching a section, since there is only three sections, two of us will work together to teach the same section
+- Ethan and I will be responsible for teaching 3.6, which is <mark>Conditionals</mark>
+- On the PearDeck, there will be visuals on slides to support our teaching, and is a more interactive form of a presentation to keep them engaged
+- We will put flow charts and images of code relating to conditionals, like IF blocks and IF ELSE blocks, and definitions of what algorithms and selection means
+- Plan to teach for about <mark>10 minutes<mark> on this section
+- Afterward, have them go through <mark>3 questions</mark> relating to this conditionals section, thinking one putting an specific example of an IF statement and having them determine the outcome,
+- Maybe question where you are given a scenario and have to show me how you would build this conditional statement on VSCode.
+- First person to get these questions right can be rewarded with candy   
+

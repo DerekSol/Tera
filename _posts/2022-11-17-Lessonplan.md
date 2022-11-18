@@ -45,5 +45,5 @@ categories: [APCSP Week 13]
 - Afterward, have them go through <mark>3 questions</mark> relating to this conditionals section, thinking one question could be putting a specific example of an IF statement and having them determine the outcome
 - Maybe question where you are given a scenario and have to show me how you would build this conditional statement on VSCode
 - First person to get these questions right can be rewarded with candy
-- At the end, we could give them independent work time to create an IF statement and and IF ELSE statement in VSCode as <mark>homework<mark>
+- At the end, we could give them independent work time to create an IF statement and and IF ELSE statement in VSCode as <mark>homework</mark>
 

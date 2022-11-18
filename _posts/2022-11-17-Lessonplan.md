@@ -41,7 +41,7 @@ categories: [APCSP Week 13]
 - Ethan and I will be responsible for teaching 3.6, which is <mark>Conditionals</mark>
 - On the PearDeck, there will be visuals on slides to support our teaching, and is a more interactive form of a presentation to keep them engaged
 - We will put flow charts and images of code relating to conditionals, like IF blocks and IF ELSE blocks, and definitions of what algorithms and selection means
-- Plan to teach for about <mark>10 minutes<mark> on this section
+- Plan to teach for about <mark>10 minutes</mark> on this section
 - Afterward, have them go through <mark>3 questions</mark> relating to this conditionals section, thinking one putting an specific example of an IF statement and having them determine the outcome,
 - Maybe question where you are given a scenario and have to show me how you would build this conditional statement on VSCode.
 - First person to get these questions right can be rewarded with candy   

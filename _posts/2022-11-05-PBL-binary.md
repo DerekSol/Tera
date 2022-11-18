@@ -4,14 +4,15 @@ layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
 image: /images/binary.png
-categories: []
+categories: [3.B, 3.C, C4.4]
 tags: [html, liquid, javascript]
+week: 13
+type: pbl
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
-
 
 {% assign BITS = 3 %}
 
@@ -58,6 +59,11 @@ tags: [html, liquid, javascript]
                 <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
                 {% endfor %}
             </tr>
+            <tr>
+                <th>4</th>
+                <th>2</th>
+                <th>1</th>
+            </tr>
             </table>
         </div>
     </div>
@@ -67,9 +73,9 @@ tags: [html, liquid, javascript]
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "images/bulb_on.gif";
+    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
     const MSG_OFF = "Turn off";
-    const IMAGE_OFF = "images/bulb_off.png"
+    const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
     // return string with current value of each bit
     function getBits() {

@@ -5,7 +5,7 @@ toc: true
 categories: [APCSP Week 13]
 ---
 
-# Notes on my Section of Teaching
+# Notes on my Section of Teaching Hello 
 ### 3.6: Daily Video 1 Notes
 - Learning how to express an algorithm that uses selection without using a programming language, such as flowcharts and pseudo code
 - <mark>Selection determines which part of an algorithm are executed based on a condition being true or false</mark>

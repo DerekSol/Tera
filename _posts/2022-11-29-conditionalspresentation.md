@@ -18,28 +18,12 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Focusing-on-Selection">Focusing on Selection<a class="anchor-link" href="#Focusing-on-Selection"> </a></h2><p><small>Selection: uses a condition that evaluates if it is <i>true</i> or <i>false</i></small>.</p>
+<h2 id="Focusing-on-Selection">Focusing on Selection<a class="anchor-link" href="#Focusing-on-Selection"> </a></h2><p><strong>Selection: uses a condition that evaluates if it is <i>true</i> or <i>false</i></strong></p>
+<p><img src="https://github.com/DerekSol/Tera/blob/6e3f337611b765e6609eccc558c73ce595ab2d6e/images/selectiondiagram.png" alt=""></p>
 
 </div>
 </div>
 </div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="p">[]({{</span><span class="n">site</span><span class="o">.</span><span class="n">baseurl</span><span class="p">}}</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">selectiondiagram</span><span class="o">.</span><span class="n">png</span> <span class="s2">&quot;https://github.com/fastai/fastpages&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
 </div>
  
 

@@ -19,7 +19,7 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Focusing-on-Selection">Focusing on Selection<a class="anchor-link" href="#Focusing-on-Selection"> </a></h2><p><strong>Selection</strong>: uses a condition that evaluates if it is <i>true</i> or <i>false</i></p>
-<p><img src="https://github.com/DerekSol/Tera/blob/master/images/selectiondiagram.png" alt=""></p>
+<p><img src="https://github.com/DerekSol/Tera/blob/6e3f337611b765e6609eccc558c73ce595ab2d6e/images/selectiondiagram.png" alt=""></p>
 
 </div>
 </div>
@@ -33,7 +33,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://github.com/DerekSol/Tera/blob/master/images/ifstatement.png" alt=""></p>
+<p><img src="https://github.com/DerekSol/Tera/blob/6e3f337611b765e6609eccc558c73ce595ab2d6e/images/ifstatement.png" alt=""></p>
 
 </div>
 </div>
@@ -88,7 +88,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://github.com/DerekSol/Tera/blob/master/images/ifelsestatement.png" alt=""></p>
+<p><img src="https://github.com/DerekSol/Tera/blob/6e3f337611b765e6609eccc558c73ce595ab2d6e/images/ifelsestatement.png" alt=""></p>
 
 </div>
 </div>

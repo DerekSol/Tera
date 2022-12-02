@@ -396,12 +396,12 @@ A String: A string is a collection of characters. What is a character as charact
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">&quot;Mr.Mortenson&quot;</span> 
-<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span> 
-<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;Very&quot;</span> 
-<span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> 
-<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> 
-<span class="n">yoda</span> <span class="o">=</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">&quot;Mr.Mortenson&quot;</span>
+<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span>
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;Very&quot;</span>
+<span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span>
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span>
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
 </pre></div>
 
@@ -439,13 +439,13 @@ A String: A string is a collection of characters. What is a character as charact
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;choclate&quot;</span> 
-<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;raisin&quot;</span> 
-<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> 
-<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
-<span class="n">vote1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span> 
-<span class="n">vote2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> 
-<span class="n">votes</span> <span class="o">=</span> <span class="s2">&quot;chocolate cookie has &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;, the raisin cookie has &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;choclate&quot;</span>
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;rasin&quot;</span>
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span>
+<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">))</span>
+<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">))</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">vote1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
 </pre></div>
 
@@ -459,7 +459,7 @@ A String: A string is a collection of characters. What is a character as charact
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>chocolate cookie has 4.0, the raisin cookie has 270
+<pre>choclate vote 225 rasin vote 4.0
 </pre>
 </div>
 </div>

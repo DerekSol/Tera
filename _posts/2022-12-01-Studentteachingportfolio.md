@@ -195,6 +195,281 @@ Which is also, 60.0%
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Sections-3-4">Unit 3 Sections 3-4<a class="anchor-link" href="#Unit-3-Sections-3-4"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes"><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>An algorithm has three components: sequencing, selection, and iteration</li>
+<li>sequencing is algorithms doing tasks in the order of specification</li>
+<li>selection is allowing is to choose two different outcomes based off a decision</li>
+<li>iteration is that if a condition is true, then the code is repeated</li>
+</ul>
+<h3 id="Algorithm-Can-Be-Represented-In-Two-Ways">Algorithm Can Be Represented In Two Ways<a class="anchor-link" href="#Algorithm-Can-Be-Represented-In-Two-Ways"> </a></h3><ul>
+<li>flowcharts, which uses shapes and arrows to represent steps of an algorithm</li>
+<li>pseudocode, which is a blend of human language and coding format</li>
+</ul>
+<h3 id="Basic-Operations">Basic Operations<a class="anchor-link" href="#Basic-Operations"> </a></h3><ul>
+<li>subtraction, represented by -</li>
+<li>addition, represented by +</li>
+<li>multiplication, represented by *</li>
+<li>division, represented by /</li>
+<li>getting the remainder, represented by MOD(% in python)</li>
+</ul>
+<h3 id="Different-Ways-Values-Are-Stored-in-Variables">Different Ways Values Are Stored in Variables<a class="anchor-link" href="#Different-Ways-Values-Are-Stored-in-Variables"> </a></h3><ul>
+<li>numerical value stored in variable</li>
+<li>value of another variable stored in variable</li>
+<li>result of an operation stored in a variable</li>
+<li>result of a procedure call stored in a variable</li>
+</ul>
+<h3 id="Strings">Strings<a class="anchor-link" href="#Strings"> </a></h3><p>What is a String?
+A String: A string is a collection of characters. What is a character as character can be anything from numbers, letters, spaces, special symbols, etc.</p>
+<p>A string is a collection of characters. What is a character as character can be anything from numbers, letters, spaces, special symbols, etc.</p>
+<p>Certain procedures may be used with strings and they vary from programming language to language Python examples</p>
+<p>len() to find the length of a string</p>
+<p>lower() to convert to lowercase</p>
+<p>etc. Pseudocode examples</p>
+<p>len() returns the length of a string</p>
+<p>concat() returns a string made up of the concatenated strings ex. concat("string1", "string2") would return string1string2</p>
+<p>substring() returns the characters from the string beginning at the at the first position to the last so an example of this would be substring ("abcdefghijk", 2, 5) would print bcde (pseudocode starts at 1)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="-Homework/Hacks-"><mark> Homework/Hacks </mark><a class="anchor-link" href="#-Homework/Hacks-"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Tracking-Variables-Hack">Tracking Variables Hack<a class="anchor-link" href="#Tracking-Variables-Hack"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span>
+<span class="c1"># Result is 20.4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span>
+<span class="c1"># Result is 0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valueA</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">valueC</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="n">valueC</span> <span class="o">-</span> <span class="n">valueA</span>
+<span class="n">valueA</span> <span class="o">=</span> <span class="n">valueA</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">valueB</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">valueC</span><span class="p">)</span>
+<span class="c1"># Result is 17 </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;curly&quot;</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;brown&quot;</span>
+<span class="n">length</span> <span class="o">=</span> <span class="s2">&quot;short&quot;</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;straight&quot;</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hair</span><span class="p">)</span>
+<span class="c1"># Result is straightbrownshort</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>straightbrownshort
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="String-Hacks">String Hacks<a class="anchor-link" href="#String-Hacks"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Problem-1">Problem 1<a class="anchor-link" href="#Problem-1"> </a></h5>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">&quot;Mr.Mortenson&quot;</span> 
+<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span> 
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;Very&quot;</span> 
+<span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> 
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> 
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mr.Mort is Very handsome.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2"> </a></h5>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;choclate&quot;</span> 
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;raisin&quot;</span> 
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> 
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
+<span class="n">vote1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span> 
+<span class="n">vote2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> 
+<span class="n">votes</span> <span class="o">=</span> <span class="s2">&quot;chocolate cookie has &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;, the raisin cookie has &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>chocolate cookie has 4.0, the raisin cookie has 270
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

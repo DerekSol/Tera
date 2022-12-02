@@ -136,7 +136,109 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Practice">Practice </a></li>
-<li class="toc-entry toc-h2"><a href="#Homework/Hacks">Homework/Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#homeworkhacksh2divdivdiv------------printgeneral-knowledge-triviaqanda-------1-what-is-the-largest-mammal-blue-whale-----2-what-is-the-largest-organ-in-the-body-skin-----3-what-galaxy-do-we-live-in-milky-way-----4-who-founded-amazon-jeff-bezos-----5-what-is-the-worlds-largest-ocean-pacific-ocean-def-qandrespquestion--display-question-return-inputted-response----printquestion----resp--input----return-respcorrect--0--setupprintcurrent-number-of-questions---strlenqanda-iterate-over-each-keyfor-key-in-qanda----rsp--qandrespkey--save-users-response-to-a-variable-rsp----rsp--rsplower--answer-is-case-sensitive-so-match-response-to-lowercase-for-answer-key-to-work----if-rsp--qandakey--check-if-the-response-is-equal-to-the-answer-in-the-dictionary--------printfcorrect--------correct--1----else--------printfrsp-is-incorrect--percent--strroundcorrectlenqanda-2100--calculate-percentageprintyou-scored---strcorrect---strlenqandaprintfwhich-is-also-percent--print-score-and-percentage----general-knowledge-triviacurrent-number-of-questions-51-what-is-the-largest-mammalcorrect2-what-is-the-largest-organ-in-the-bodyheart-is-incorrect-3-what-galaxy-do-we-live-incorrect4-who-founded-amazoncorrect5-what-is-the-worlds-largest-oceanatlantic-ocean-is-incorrect-you-scored-35which-is-also-600----unit-3-sections-3-4-notes-homeworkhacks-div-">Homework/Hacks&lt;/h2&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+
+
+
+
+    
+print(&quot;General Knowledge Trivia&quot;)
+QandA = { 
+    &quot;#1) What is the largest mammal?&quot;: &quot;blue whale&quot;, 
+    &quot;#2) What is the largest organ in the body?&quot;: &quot;skin&quot;, 
+    &quot;#3) What galaxy do we live in?&quot;: &quot;milky way&quot;, 
+    &quot;#4) Who founded Amazon?&quot;: &quot;jeff bezos&quot;, 
+    &quot;#5) What is the world&#39;s largest ocean?&quot;: &quot;pacific ocean&quot;, 
+}
+
+def qandresp(question): # display question, return inputted response
+    print(question)
+    resp = input()
+    return resp
+
+correct = 0 
+
+# Setup
+print(&quot;Current number of questions: &quot; + str(len(QandA)))
+
+# iterate over each key
+for key in QandA:
+    rsp = qandresp(key) # save user&#39;s response to a variable rsp
+    rsp = rsp.lower() # answer is case sensitive, so match response to lowercase for answer key to work
+    if rsp == QandA[key]: # check if the response is equal to the answer in the dictionary
+        print(f&quot;Correct!&quot;)
+        correct += 1
+    else:
+        print(f&quot;{rsp} is incorrect &quot;) 
+
+percent = str(round(correct/len(QandA), 2)*100) # calculate percentage
+
+print(&quot;You scored &quot; + str(correct) +&quot;/&quot; + str(len(QandA)))
+print(f&quot;Which is also, {percent}%&quot;) # print score and percentage
+
+
+    
+
+
+
+
+
+
+
+
+
+General Knowledge Trivia
+Current number of questions: 5
+#1) What is the largest mammal?
+Correct!
+#2) What is the largest organ in the body?
+heart is incorrect 
+#3) What galaxy do we live in?
+Correct!
+#4) Who founded Amazon?
+Correct!
+#5) What is the world&#39;s largest ocean?
+atlantic ocean is incorrect 
+You scored 3/5
+Which is also, 60.0%
+
+
+
+
+
+
+
+
+    
+
+
+
+Unit 3 Sections 3-4 
+
+
+
+
+
+Notes 
+
+
+
+
+
+Homework/Hacks 
+
+
+
+&lt;/div&gt;
+ 
+
+</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Unit-3-Sections-3-4">Unit 3 Sections 3-4 </a>
@@ -167,7 +269,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Notes">
-<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a>
 </h2>
 </div>
 </div>
@@ -263,15 +365,14 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Homework/Hacks">
-<a class="anchor" href="#Homework/Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Homework/Hacks<a class="anchor-link" href="#Homework/Hacks"> </a>
-</h2>
-</div>
-</div>
-</div>
+<h2>
+<a class="anchor" href="#homeworkhacksh2divdivdiv------------printgeneral-knowledge-triviaqanda-------1-what-is-the-largest-mammal-blue-whale-----2-what-is-the-largest-organ-in-the-body-skin-----3-what-galaxy-do-we-live-in-milky-way-----4-who-founded-amazon-jeff-bezos-----5-what-is-the-worlds-largest-ocean-pacific-ocean-def-qandrespquestion--display-question-return-inputted-response----printquestion----resp--input----return-respcorrect--0--setupprintcurrent-number-of-questions---strlenqanda-iterate-over-each-keyfor-key-in-qanda----rsp--qandrespkey--save-users-response-to-a-variable-rsp----rsp--rsplower--answer-is-case-sensitive-so-match-response-to-lowercase-for-answer-key-to-work----if-rsp--qandakey--check-if-the-response-is-equal-to-the-answer-in-the-dictionary--------printfcorrect--------correct--1----else--------printfrsp-is-incorrect--percent--strroundcorrectlenqanda-2100--calculate-percentageprintyou-scored---strcorrect---strlenqandaprintfwhich-is-also-percent--print-score-and-percentage----general-knowledge-triviacurrent-number-of-questions-51-what-is-the-largest-mammalcorrect2-what-is-the-largest-organ-in-the-bodyheart-is-incorrect-3-what-galaxy-do-we-live-incorrect4-who-founded-amazoncorrect5-what-is-the-worlds-largest-oceanatlantic-ocean-is-incorrect-you-scored-35which-is-also-600----unit-3-sections-3-4-notes-homeworkhacks-div-" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Homework/Hacks<mark>&lt;/h2&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -361,7 +462,7 @@ Which is also, 60.0%
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Notes">
-<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a>
 </h2>
 </div>
 </div>
@@ -370,13 +471,19 @@ Which is also, 60.0%
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Homework/Hacks">
-<a class="anchor" href="#Homework/Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Homework/Hacks<a class="anchor-link" href="#Homework/Hacks"> </a>
+<a class="anchor" href="#Homework/Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Homework/Hacks</mark><a class="anchor-link" href="#Homework/Hacks"> </a>
 </h2>
 </div>
 </div>
 </div>
-</div>
+&lt;/div&gt;
+ 
 
+</mark></mark>
+</h2>
+</div>
+</div></div>
+</div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

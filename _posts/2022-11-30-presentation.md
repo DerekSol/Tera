@@ -82,7 +82,7 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than y&quot;</span><span class="p">)</span>
@@ -100,7 +100,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>x is greater than y
+<pre>x is not greater than y
 </pre>
 </div>
 </div>

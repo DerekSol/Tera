@@ -28,7 +28,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2>
+<h2 id="Notes"><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a></h2>
 </div>
 </div>
 </div>
@@ -115,7 +115,8 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Homework/Hacks">Homework/Hacks<a class="anchor-link" href="#Homework/Hacks"> </a></h2>
+<h2><mark>Homework/Hacks<mark></h2>
+
 </div>
 </div>
 </div>
@@ -203,13 +204,13 @@ Which is also, 60.0%
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2>
+<h2 id="Notes"><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Homework/Hacks">Homework/Hacks<a class="anchor-link" href="#Homework/Hacks"> </a></h2>
+<h2 id="Homework/Hacks"><mark>Homework/Hacks</mark><a class="anchor-link" href="#Homework/Hacks"> </a></h2>
 </div>
 </div>
 </div>

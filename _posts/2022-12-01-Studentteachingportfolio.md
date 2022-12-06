@@ -562,7 +562,7 @@ A String: A string is a collection of characters. What is a character as charact
 <ul>
 <li>Else: when the condition does not meet, do statement()</li>
 <li>Elif: when the condition does not meet, but meets another condition, do statement()</li>
-<li>Break: stop the loo</li>
+<li>Break: stop the loop</li>
 </ul>
 
 </div>

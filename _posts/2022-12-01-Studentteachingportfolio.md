@@ -478,7 +478,93 @@ A String: A string is a collection of characters. What is a character as charact
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Notes"><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a></h2>
+<h2 id="Notes"><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a></h2><p>Lists: a sequence of variables</p>
+<ul>
+<li>we can use lists to store multiple items into one variable</li>
+<li>used to store collections of data</li>
+<li>changeable, ordered, allow duplicates</li>
+</ul>
+<p>There is list, then four total collection data types in Python</p>
+<ul>
+<li>Tuple: collection that is ordered, unchangeable, allows duplicates</li>
+<li>Set: collection that is unordered, unchangeable, doesn't allow duplicates</li>
+<li>Dictionary: collection that is ordered, changeable, doesn't allow duplicates</li>
+</ul>
+<p>More Terms</p>
+<ul>
+<li>Index: a term used to sort data in order to reference to an element in a list (allows for duplicates)</li>
+<li>Elements: the values in the list assigned to an index</li>
+</ul>
+<p>Methods</p>
+<table>
+<thead><tr>
+<th>Method</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>append()</td>
+<td>adds element to the end of the list</td>
+<td>fruits.append("watermelon")</td>
+</tr>
+<tr>
+<td>index()</td>
+<td>returns the index of the first element with the specified value</td>
+<td>fruits.index("apple")</td>
+</tr>
+<tr>
+<td>insert()</td>
+<td>adds element at given position</td>
+<td>fruits.insert(1, "watermelon")</td>
+</tr>
+<tr>
+<td>remove()</td>
+<td>removes the first item with the specified value</td>
+<td>fruits.remove("strawberry")</td>
+</tr>
+<tr>
+<td>reverse()</td>
+<td>reverses the list order</td>
+<td>fruits.reverse()</td>
+</tr>
+<tr>
+<td>sort()</td>
+<td>sorts the list</td>
+<td>fruits.sort()</td>
+</tr>
+<tr>
+<td>count()</td>
+<td>returns the amount of elements with the specified value</td>
+<td>fruits.count("apple")</td>
+</tr>
+<tr>
+<td>copy()</td>
+<td>returns a copy of the list</td>
+<td>fruits.copy()</td>
+</tr>
+<tr>
+<td>clear()</td>
+<td>removes the elements from the list</td>
+<td>fruits.clear()</td>
+</tr>
+</tbody>
+</table>
+<p>Iteration</p>
+<ul>
+<li>Iteration is the repetition of a process or utterance applied to the result or taken from a previous statement.</li>
+<li>There's a lot of types of iteration though, what to use? How do we apply iteration to lists? </li>
+<li>Some methods include using a "for loop", using a "for loop and range()", using a "while loop", and using comprehension </li>
+<li>here are 2 types of iteration: definite and indefinite. Definite iteration clarifies how many times the loop is going to run, while indefinite specifies a condition that must be met</li>
+</ul>
+<p>Else, elif, break</p>
+<ul>
+<li>Else: when the condition does not meet, do statement()</li>
+<li>Elif: when the condition does not meet, but meets another condition, do statement()</li>
+<li>Break: stop the loo</li>
+</ul>
+
 </div>
 </div>
 </div>

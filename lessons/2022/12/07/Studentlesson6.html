@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -119,22 +119,22 @@ window.onload = wrap_img;
 </h2>
 <p>Slide 1:</p>
 <ul>
-<li>A procedure is a named group of programming instructions that may have parameters and return values.</li>
-<li>Procedures are referred to by different names, such as method or function, depending on the programing language.</li>
-<li>Parameters are input values of a procedure. Arguments specify the values of the parameters when procedure is called.</li>
-<li>A procedure call interrupts the sequential execution of statements causing the program to execute the statements within the procedure before continuing. One the last statement in the procedure (or a return statement) has executed, flow or control is returned to the point immediately following where the procedure was called.</li>
+<li>A <u>procedure</u> is a named group of programming instructions that may have parameters and return values.</li>
+<li>Procedures are referred to by different names, such as <u>method</u> or <u>function</u>, depending on the programing language.</li>
+<li>Parameters are input values of a procedure. <u>Arguments</u> specify the values of the parameters when procedure is called.</li>
+<li>A procedure call interrupts the <u>sequential</u> execution of statements causing the program to execute the statements within the procedure before continuing. One the last statement in the procedure (or a return statement) has executed, flow or control is returned to the point immediately following where the procedure was <u>called</u>.</li>
 </ul>
 <p>Slide 2:</p>
 <ul>
-<li>When calling procedures, it's important to take notice to whether it returns data, or a block of statements.</li>
-<li>If the procedure just returns a block of statements, you call the procedure by referring to the procedure name, and inputting the arguments.</li>
-<li>If the procedure returns some sort of data like a boolean or value, then you will assign that value to a variable</li>
+<li>When calling procedures, it's important to take notice to whether it returns data, or a block of <u>statements</u>.</li>
+<li>If the procedure just returns a block of statements, you call the procedure by referring to the procedure name, and <u>inputting</u> the arguments.</li>
+<li>If the procedure returns some sort of data like a <u>boolean</u> or <u>value</u>, then you will assign that value to a variable</li>
 </ul>
 <p>Slide 3:</p>
 <ul>
 <li>Assume the Temperature outside is Fahrenheit. </li>
-<li>The procedure convertFahrenheit is intended to convert from Fahrenheit to Celsius.</li>
-<li>Convert the following psuedocode to python</li>
+<li>The procedure <u>convertFahrenheit</u> is intended to convert from Fahrenheit to Celsius.</li>
+<li>Convert the following <u>psuedocode</u> to python</li>
 </ul>
 
 </div>
@@ -186,7 +186,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#Developing-Procedures" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developing Procedures<a class="anchor-link" href="#Developing-Procedures"> </a>
 </h2>
 <p>Slide 8:</p>
-<p>Picking a descriptive name is important in case you revisit the code later on (separate words with capitals)
+<p>Picking a <u>descriptive</u> name is important in case you revisit the code later on (separate words with capitals)
 There are 2 different types of procedures- ones that return a value and those that simply execute a block of statements
 Steps of developing procedure: picking a useful name, thinking of parameters (what data does the procedure need to know), making a flowchart or writing procedure in pseudocode, and actually developing the procedure.</p>
 <p>Slide 9:</p>
@@ -207,15 +207,39 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">NewQuizGrade</span><span class="p">():</span>
-<span class="c1">#finish this later</span>
-<span class="n">currentGrade</span> <span class="o">&lt;-</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
-<span class="n">currentGrade</span> <span class="o">&lt;-</span> <span class="n">current</span> <span class="n">Grade</span> <span class="o">*</span> <span class="mi">100</span>
-<span class="k">if</span> <span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span>
-    <span class="n">quizGrade</span> <span class="o">&lt;-</span> <span class="n">currentGrade</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quizGrade</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="k">def</span> <span class="nf">currentGrade</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span>    
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">return</span> <span class="n">currentGrade</span>
+
+<span class="n">newPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What did you get out of 40?"</span><span class="p">))</span>
+<span class="n">newPercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">currentGrade</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">newPoints</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
+    <span class="n">newquizGrade</span> <span class="o">=</span> <span class="n">newPercent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your new grade is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newquizGrade</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your grade is still "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/40"</span><span class="p">)</span>
+    
+    
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>your new grade is 87.5%
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -229,13 +253,14 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 <a class="anchor" href="#Procedural-Abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedural Abstraction<a class="anchor-link" href="#Procedural-Abstraction"> </a>
 </h2>
 <ul>
-<li>One type of abstraction is procedural abstraction which provides a name for a process and allows a procedure to be used only knowing what it does and not how it does it</li>
-<li>This is very helpful in managing complexity in a program</li>
-<li>Subdivision of a program into separate subprograms is called modularity</li>
-<li>A procedural abstraction may extract shared features to generalize functionality instead of duplicating code. This allows for program reuse, which helps manage complexity</li>
+<li>One type of abstraction is <u>procedural</u> abstraction which provides a name for a process and allows a procedure to be used only knowing what it does and not how it does it</li>
+<li>This is very helpful in managing <u>complexity</u> in a program</li>
+<li>Subdivision of a program into separate subprograms is called <u>modularity</u>
+</li>
+<li>A procedural abstraction may <u>extract</u> shared features to generalize functionality instead of duplicating code. This allows for program reuse, which helps manage complexity</li>
 <li>When a pre-written procedure is called, you don’t necessarily need to know the details of this, just what it does and how to call it</li>
-<li>Simply, procedural abstraction is naming and calling a prewritten procedure</li>
-<li>Making sure to include the right arguments so the procedure can do what its supposed to do is crucial</li>
+<li>Simply, procedural abstraction is naming and calling a <u>prewritten</u> procedure</li>
+<li>Making sure to include the right arguments so the <u>procedure</u> can do what its supposed to do is crucial</li>
 </ul>
 
 </div>
@@ -303,14 +328,69 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="n">marks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">getData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rn</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span><span class="p">):</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">rn</span> <span class="o">=</span> <span class="n">rn</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m3</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">displayData</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Roll Call Number: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">rn</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name is: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 1: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 2: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 3: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Average Grade of: "</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average</span><span class="p">())</span>
+        <span class="n">GradeAverage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">GradeAverage</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"your an A student"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">GradeAverage</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"your a B Student"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"do better"</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    
+    <span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">((</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="c1"># code goes here</span>
+<span class="n">r</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the roll call number: "</span><span class="p">))</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name: "</span><span class="p">)</span>
+<span class="n">m1</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in first subject: "</span><span class="p">))</span>
+<span class="n">m2</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in second subject: "</span><span class="p">))</span>
+<span class="n">m3</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in third subject: "</span><span class="p">))</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">()</span>
+<span class="n">s1</span><span class="o">.</span><span class="n">getData</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span><span class="p">)</span>
+<span class="n">s1</span><span class="o">.</span><span class="n">displayData</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Roll Call Number:  26
+Name is:  Derek Sol
+Grade in subject 1:  81
+Grade in subject 2:  84
+Grade in subject 3:  93
+Average Grade of:  86.0
+your a B Student
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

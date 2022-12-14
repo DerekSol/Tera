@@ -24,6 +24,7 @@ categories: [APCSP Week 12]
 - Her title is senior director for marketing and sales
 
 # Kris Porter
+![]({{site.baseurl}}/images/kris.png)
 - Title has been Software Engineer, SRE, DevOps, Infrastructure Engineer
 - Livermore High School alum, enjoyed STEM classes
 - Went to UCLA for Electrical Engineering, focused on Communication Systems and Computer Networks

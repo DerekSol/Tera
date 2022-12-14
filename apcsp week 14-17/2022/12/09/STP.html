@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      17 min read
     
 </span></p>
 
@@ -136,7 +136,7 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Practice">Practice </a></li>
-<li class="toc-entry toc-h2"><a href="#-Homework/Hacks-"> Homework/Hacks  </a></li>
+<li class="toc-entry toc-h2"><a href="#-Homework-"> Homework  </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Unit-3-Sections-3-4">Unit 3 Sections 3-4 </a>
@@ -149,7 +149,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Strings">Strings </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#-Homework/Hacks-"> Homework/Hacks  </a>
+<li class="toc-entry toc-h2"><a href="#-Homework-"> Homework  </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Tracking-Variables-Hack">Tracking Variables Hack </a></li>
 <li class="toc-entry toc-h3"><a href="#String-Hacks">String Hacks </a>
@@ -186,6 +186,31 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Calling-Procedures">Calling Procedures </a></li>
 <li class="toc-entry toc-h2"><a href="#Developing-Procedures">Developing Procedures </a></li>
 <li class="toc-entry toc-h2"><a href="#Procedural-Abstraction">Procedural Abstraction </a></li>
+<li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Sections-14-15">Unit 3 Sections 14-15 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Libraries">Libraries </a></li>
+<li class="toc-entry toc-h3"><a href="#A-few-libraries-that-simplify-coding-processes:">A few libraries that simplify coding processes: </a></li>
+<li class="toc-entry toc-h3"><a href="#API’s">API’s </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Random-Values">Random Values </a></li>
+<li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
+<li class="toc-entry toc-h2"><a href="#Two-Other-Python-Libraries">Two Other Python Libraries </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Keras">Keras </a></li>
+<li class="toc-entry toc-h3"><a href="#Pandas">Pandas </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Sections-16">Unit 3 Sections 16 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
 <li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
 </ul>
 </li>
@@ -310,8 +335,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-Homework/Hacks-">
-<a class="anchor" href="#-Homework/Hacks-" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark> Homework/Hacks </mark><a class="anchor-link" href="#-Homework/Hacks-"> </a>
+<h2 id="-Homework-">
+<a class="anchor" href="#-Homework-" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark> Homework </mark><a class="anchor-link" href="#-Homework-"> </a>
 </h2>
 </div>
 </div>
@@ -465,8 +490,8 @@ A String: A string is a collection of characters. What is a character as charact
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-Homework/Hacks-">
-<a class="anchor" href="#-Homework/Hacks-" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark> Homework/Hacks </mark><a class="anchor-link" href="#-Homework/Hacks-"> </a>
+<h2 id="-Homework-">
+<a class="anchor" href="#-Homework-" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark> Homework </mark><a class="anchor-link" href="#-Homework-"> </a>
 </h2>
 </div>
 </div>
@@ -1175,6 +1200,427 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 <li>Making sure to include the right arguments so the procedure can do what its supposed to do is crucial</li>
 </ul>
 
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quizGrade</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="k">def</span> <span class="nf">currentGrade</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span>    
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">return</span> <span class="n">currentGrade</span>
+
+<span class="n">newPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What did you get out of 40?"</span><span class="p">))</span>
+<span class="n">newPercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">currentGrade</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">newPoints</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
+    <span class="n">newquizGrade</span> <span class="o">=</span> <span class="n">newPercent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your new grade is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newquizGrade</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your grade is still "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/40"</span><span class="p">)</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>your new grade is 87.5%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Homework">
+<a class="anchor" href="#Homework" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Homework</mark><a class="anchor-link" href="#Homework"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="n">marks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">getData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rn</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span><span class="p">):</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">rn</span> <span class="o">=</span> <span class="n">rn</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+        <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m3</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">displayData</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Roll Call Number: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">rn</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name is: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 1: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 2: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade in subject 3: "</span><span class="p">,</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Average Grade of: "</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average</span><span class="p">())</span>
+        <span class="n">GradeAverage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">GradeAverage</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"your an A student"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">GradeAverage</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"your a B Student"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"do better"</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    
+    <span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">((</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span><span class="n">Student</span><span class="o">.</span><span class="n">marks</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the roll call number: "</span><span class="p">))</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name: "</span><span class="p">)</span>
+<span class="n">m1</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in first subject: "</span><span class="p">))</span>
+<span class="n">m2</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in second subject: "</span><span class="p">))</span>
+<span class="n">m3</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the Grade in third subject: "</span><span class="p">))</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">()</span>
+<span class="n">s1</span><span class="o">.</span><span class="n">getData</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span><span class="p">)</span>
+<span class="n">s1</span><span class="o">.</span><span class="n">displayData</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Roll Call Number:  26
+Name is:  Derek Sol
+Grade in subject 1:  81
+Grade in subject 2:  84
+Grade in subject 3:  93
+Average Grade of:  86.0
+your a B Student
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Sections-14-15">
+<a class="anchor" href="#Unit-3-Sections-14-15" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Sections 14-15<a class="anchor-link" href="#Unit-3-Sections-14-15"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Libraries">
+<a class="anchor" href="#Libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Libraries<a class="anchor-link" href="#Libraries"> </a>
+</h3>
+<ul>
+<li>A library is a collection of precompiled codes that can be used later on in a program for some specific well-defined operations.</li>
+<li>These precompiled codes can be referred to as modules. Each module contains bundles of code that can be used repeatedly in different programs.</li>
+<li>A library may also contain documentation, configuration data, message templates, classes, and values, etc.</li>
+</ul>
+<h3 id="A-few-libraries-that-simplify-coding-processes:">
+<a class="anchor" href="#A-few-libraries-that-simplify-coding-processes:" aria-hidden="true"><span class="octicon octicon-link"></span></a>A few libraries that simplify coding processes:<a class="anchor-link" href="#A-few-libraries-that-simplify-coding-processes:"> </a>
+</h3>
+<ul>
+<li>Pillow allows you to work with images.</li>
+<li>Tensor Flow helps with data automation and monitors performance.</li>
+<li>Matplotlib allows you to make 2D graphs and plots.</li>
+</ul>
+<h3 id="API’s">
+<a class="anchor" href="#API%E2%80%99s" aria-hidden="true"><span class="octicon octicon-link"></span></a>API’s<a class="anchor-link" href="#API%E2%80%99s"> </a>
+</h3>
+<ul>
+<li>An Application Program Interface, or API, contains specific direction for how the procedures in a library behave and can be used.</li>
+<li>An API acts as a gateway for the imported procedures from a library to interact with the rest of your code.</li>
+</ul>
+<h2 id="Random-Values">
+<a class="anchor" href="#Random-Values" aria-hidden="true"><span class="octicon octicon-link"></span></a>Random Values<a class="anchor-link" href="#Random-Values"> </a>
+</h2>
+<ul>
+<li>Random number generation (RNG) produces a random number (crazy right?)</li>
+<li>This means that a procedure with RNG can return different values even if the parameters (inputs) do not change</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Homework">
+<a class="anchor" href="#Homework" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Homework</mark><a class="anchor-link" href="#Homework"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many numbers would you like to generate?"</span><span class="p">))</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Give the lowest number you want all numbers to be picked from?"</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Give the highest number you want all numbers to be picked from?"</span><span class="p">))</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="c1"># I input the range from numbers 1-100</span>
+
+<span class="n">evens</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">odds</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">evens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">odds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">evens</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">odds</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[46, 78, 12, 78, 76, 8, 18, 92, 98, 42, 64, 30]
+[83, 95, 7, 97, 39, 61, 73, 21]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">poly</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">derivative</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"is"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">derivative</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The derivative of 
+   5     2
+2 x - 6 x + 24 x
+is
+    4
+10 x - 12 x + 24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="n">derivative</span> <span class="o">=</span> <span class="p">((</span><span class="n">d</span> <span class="o">*</span> <span class="n">n</span><span class="o">.</span><span class="n">deriv</span><span class="p">())</span> <span class="o">-</span> <span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span> <span class="o">*</span> <span class="n">n</span><span class="p">))</span> <span class="o">/</span> <span class="mi">4</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">derivative</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2"> divided by"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">is: </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">derivative</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">When x = 9,  f'(x) = </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">result</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The derivative of 
+    4     2
+13 x + 4 x
+ divided by 
+2
+is: 
+    3
+26 x + 4 x
+
+When x = 9,  f'(x) = 
+18990
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'dog1'</span><span class="p">,</span> <span class="s1">'dog2'</span><span class="p">,</span> <span class="s1">'dog3'</span><span class="p">,</span> <span class="s1">'dog4'</span><span class="p">,</span> <span class="s1">'dog5'</span><span class="p">,</span> <span class="s1">'dog6'</span><span class="p">,</span> <span class="s1">'dog7'</span><span class="p">,</span> <span class="s1">'dog8'</span><span class="p">,</span> <span class="s1">'dog9'</span><span class="p">,</span> <span class="s1">'dog10'</span><span class="p">,</span> <span class="s1">'cat1'</span><span class="p">,</span> <span class="s1">'cat2'</span><span class="p">,</span> <span class="s1">'cat3'</span><span class="p">,</span> <span class="s1">'cat4'</span><span class="p">,</span> <span class="s1">'cat5'</span><span class="p">,</span> <span class="s1">'cat6'</span><span class="p">,</span> <span class="s1">'cat7'</span><span class="p">,</span> <span class="s1">'cat8'</span><span class="p">,</span> <span class="s1">'cat9'</span><span class="p">,</span> <span class="s1">'cat10'</span><span class="p">]</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['dog10', 'cat8', 'cat4', 'dog3', 'cat1', 'dog1', 'cat10', 'dog2', 'cat6', 'dog6', 'dog4', 'dog7', 'cat2', 'dog5', 'cat9', 'cat7', 'dog9', 'cat5', 'dog8', 'cat3']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Two-Other-Python-Libraries">
+<a class="anchor" href="#Two-Other-Python-Libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Two Other Python Libraries<a class="anchor-link" href="#Two-Other-Python-Libraries"> </a>
+</h2>
+<h3 id="Keras">
+<a class="anchor" href="#Keras" aria-hidden="true"><span class="octicon octicon-link"></span></a>Keras<a class="anchor-link" href="#Keras"> </a>
+</h3>
+<ul>
+<li>Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result as fast as possible is key to doing good research.</li>
+<li>It is simple, flexible, and powerful.</li>
+<li>Keras reduces developer cognitive load to free you to focus on the parts of the problem that really matter.</li>
+<li>Keras adopts the principle of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned. </li>
+<li>Keras provides industry-strength performance and scalability: it is used by organizations and companies including NASA, YouTube, or Waymo.</li>
+</ul>
+<h3 id="Pandas">
+<a class="anchor" href="#Pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas<a class="anchor-link" href="#Pandas"> </a>
+</h3>
+<ul>
+<li>Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of another package named Numpy, which provides support for multi-dimensional arrays.
+-Pandas makes it simple to do many of the time consuming, repetitive tasks associated with working with data such as; data cleansing, data fill, data normalization, merges and joins, data visualization, statistical analysis, data inspection, loading and saving data, etc.</li>
+<li>Pretty much used to analyze data fast, powerfully, and flexibly </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Sections-16">
+<a class="anchor" href="#Unit-3-Sections-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Sections 16<a class="anchor-link" href="#Unit-3-Sections-16"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Notes</mark><a class="anchor-link" href="#Notes"> </a>
+</h2>
 </div>
 </div>
 </div>

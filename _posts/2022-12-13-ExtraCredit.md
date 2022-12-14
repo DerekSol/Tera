@@ -35,6 +35,7 @@ categories: [APCSP Week 12]
 - NBC Universal, Streaming media infrastructure
 - Intro to DevOps, transition to Qualcomm
 - Working at <mark>Twitter</mark> 
+![]({{site.baseurl}}/images/twitter.png)
 ## Continuous Learning highlights
 - CCNA training
 - Machine Learning and Deep Learning (Qualcomm)

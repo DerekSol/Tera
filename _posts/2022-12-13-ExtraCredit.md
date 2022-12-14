@@ -6,6 +6,7 @@ categories: [APCSP Week 12]
 ---
 
 # Kathyleen Beveridge
+![]({{site.baseurl}}/images/kathlyeen.png)
 - Born in Vietnam, moved to San Diego in 2004
 - Received her bachelors degree in Santa Clara bay area, then received a degree at USC
 - Lives by a mission statement, says my mission in life is to not merely survive, but to thrive and to do so with passion...

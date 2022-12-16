@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      12 min read
     
 </span></p>
 
@@ -135,6 +135,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h5"><a href="#Homeworks,-hacks,-and-classwork(filled-in-blanks)-for-both-3.17-and-3.18-are-due-on-Thursday-at-9:00-pm.--0.1-points-for-each-day-late.">Homeworks, hacks, and classwork(filled in blanks) for both 3.17 and 3.18 are due on Thursday at 9:00 pm. -0.1 points for each day late. </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#Decidable-Problem">Decidable Problem </a></li>
+<li class="toc-entry toc-h2"><a href="#Code-that-runs-forever">Code that runs forever </a></li>
 </ul>
 </li>
 </ul><!--
@@ -175,12 +177,12 @@ window.onload = wrap_img;
 </h3>
 <ul>
 <li>The ability of an algorithm to solve a problem in an efficient way<ul>
-<li>An efficient algorithm solves a problem <strong>___</strong> and with a <strong><strong><strong>_</strong></strong></strong>, such as time and memory.</li>
+<li>An efficient algorithm solves a problem <u>quickly</u> and with a <u>minimum amount of resources</u>, such as time and memory.</li>
 </ul>
 </li>
 <li>How do we determine if an algorithm is efficient or not?<ul>
-<li>One way we can do this is by determining the <strong><strong>_</strong></strong> of the algorithm.</li>
-<li>Another way is through <strong><strong>_</strong></strong>. </li>
+<li>One way we can do this is by determining the <u>time complexity</u> of the algorithm.</li>
+<li>Another way is through <u>space complexity</u>. </li>
 </ul>
 </li>
 </ul>
@@ -195,10 +197,12 @@ window.onload = wrap_img;
 <a class="anchor" href="#Traveling-Merchant-Problem-Hacks:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Traveling Merchant Problem Hacks:<a class="anchor-link" href="#Traveling-Merchant-Problem-Hacks:"> </a>
 </h2>
 <p>What did you and your team discuss? (record below)</p>
+<p>We discussed all the possible ways to start from Indianapolis and visit all the cities. We said that in order to get the shortest route, you have to take the shortest flight first, so go cincinnati, then figure out the shortest distances from there and continue on.</p>
 <ul>
-<li>An <strong><em>__</em></strong> solution is <strong><strong><strong><strong>__</strong></strong></strong></strong> that produces a solution that isn't necessarily <strong>_</strong> but can be used when normal methods take forever </li>
+<li>An <u>heuristic</u> solution is <u>an approach to a problem</u> that produces a solution that isn't necessarily <u>optimal</u> but can be used when normal methods take forever </li>
 </ul>
 <p>Describe the method used to solve the traveling merchant problem. (record below)</p>
+<p>The method used was a heuristic solution. We go to the shortest travel from Indianapolis, then look at the neighboring cities. We continue to pick the shortest travel every time and follow that until the end. This makes the traveling more optimal with less distance traveled and less time consuming if it were to be a real life scenario.</p>
 
 </div>
 </div>
@@ -227,8 +231,8 @@ There are two types of decision problems that Collegeboard goes over:</p>
 <li>Decidable Problems</li>
 <li>Undecidable Problems</li>
 </ul>
-<p>A <strong><em>__</em></strong> is a problem in computer science and mathematics for which an algorithm can be created that can always produce a correct answer or solution. In other words, a decidable problem is a problem for which there exists an algorithm that can be used to determine whether a given input is a valid solution or not.</p>
-<p>An <strong><em>__</em></strong> problem is a problem in computer science and mathematics for which it is impossible to create an algorithm that can always provide a correct answer or solution. This means that it is not possible for an algorithm to always determine whether a given input is a valid solution to an undecidable problem.</p>
+<p>A <u>decidable problem</u> is a problem in computer science and mathematics for which an algorithm can be created that can always produce a correct answer or solution. In other words, a decidable problem is a problem for which there exists an algorithm that can be used to determine whether a given input is a valid solution or not.</p>
+<p>An <u>undecidable problem</u> problem is a problem in computer science and mathematics for which it is impossible to create an algorithm that can always provide a correct answer or solution. This means that it is not possible for an algorithm to always determine whether a given input is a valid solution to an undecidable problem.</p>
 </blockquote>
 
 </div>
@@ -342,6 +346,29 @@ False
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 10&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb#X13sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>         return False
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb#X13sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> # Using while loop to keep searching an a non-integer above 1. Note that the computer runs forever.
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb#X13sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> while i == 0:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb#X13sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     number += 1
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/dmsol/Tera/_notebooks/2022-12-14-Studentlesson9.ipynb#X13sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     if integerTest(number) == False:
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -351,9 +378,9 @@ False
 <h3 id="The-Halting-Problem">
 <a class="anchor" href="#The-Halting-Problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Halting Problem<a class="anchor-link" href="#The-Halting-Problem"> </a>
 </h3>
-<p>The halting problem is an example of an <strong><em>__</em></strong>. It states that it is not always possible to correctly determine whether a code halts or runs forever.</p>
+<p>The halting problem is an example of an <u>undecidable problem</u>. It states that it is not always possible to correctly determine whether a code halts or runs forever.</p>
 <blockquote>
-<p>There is <strong><em>__</em></strong> to write an algorithm to analyze and determine whether a body of code can run forever or not.</p>
+<p>There is <u>no way</u> to write an algorithm to analyze and determine whether a body of code can run forever or not.</p>
 </blockquote>
 
 </div>
@@ -368,8 +395,8 @@ False
 <ul>
 <li>In order to understand this, suppose that an algorithm was able to analyze whether a code halts or not. Let's call this algorithm <code>HaltChecker</code>.</li>
 <li>
-<code>HaltChecker</code> analyzes the program,<code>program P</code>, and its input,<code>input I</code>. If <code>program P</code> halts with <code>input I</code>, <code>HaltChecker</code> returns an output of "halts". If <code>program P</code> doesn't halt(runs forever) with <code>input I</code>, <code>HaltChecker</code> returns an output of "never". For example, in the code where it tests if variable <strong>number</strong>, the <strong><em>__</em></strong>, so <code>HaltChecker</code> returns an output of <strong><em>__</em></strong>.</li>
-<li>Then, we add another algorithm called <code>Reverser</code> which reverses <code>HaltChecker</code>'s output. So, if "never" is the output of <code>HaltChecker</code>, then the output of <code>Reverser</code> is <strong><em>__</em></strong>. It's also the same the other way around: if <code>HaltChecker</code> has an output of "halts", then <code>Reverser</code> has an output of <strong><em>__</em></strong>.</li>
+<code>HaltChecker</code> analyzes the program,<code>program P</code>, and its input,<code>input I</code>. If <code>program P</code> halts with <code>input I</code>, <code>HaltChecker</code> returns an output of "halts". If <code>program P</code> doesn't halt(runs forever) with <code>input I</code>, <code>HaltChecker</code> returns an output of "never". For example, in the code where it tests if variable <strong>number</strong>, the <u>code runs forever</u>, so <code>HaltChecker</code> returns an output of <u>"never"</u>.</li>
+<li>Then, we add another algorithm called <code>Reverser</code> which reverses <code>HaltChecker</code>'s output. So, if "never" is the output of <code>HaltChecker</code>, then the output of <code>Reverser</code> is <u>"halts"</u>. It's also the same the other way around: if <code>HaltChecker</code> has an output of "halts", then <code>Reverser</code> has an output of <u>"never</u>.</li>
 <li>We combine these algorithms into one entire body of code.</li>
 <li><strong>Since <code>Reverser</code> is the algorithm at the end, hence giving the ultimate output, notice how it prints "never" when in fact there is an end(As proved by <code>HaltChecker</code>), and how it also prints "halts" when there is in fact is no end to the code(Also proved by <code>HaltChecker</code>). As a result, <code>HaltChecker</code> is inaccurate and this is an undecidable problem.</strong></li>
 </ul>
@@ -412,6 +439,7 @@ False
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h2>
 <p>Come up with one situation in which a computer runs into an undecidable problem. Explain why it is considered an undecidable problem.</p>
+<p>One situation in which a computer may run into an undecidable problem is when it is trying to determine whether a given mathematical statement is true or false. This problem, known as the axiomatic truth problem, is considered undecidable because there is no algorithm that can accurately determine the truth value of an arbitrary mathematical statement. The reason the axiomatic truth problem is undecidable is that it involves trying to determine the truth or falsity of an arbitrary statement, which may be impossible to do with complete accuracy. In mathematics, a statement is considered true if it can be proven to be true using a set of axioms and rules of inference. However, it is not always possible to prove the truth or falsity of a given statement using these methods. For example, the statement "There are infinitely many prime numbers" cannot be proven or disproven using the standard axioms of mathematics.</p>
 
 </div>
 </div>
@@ -462,12 +490,27 @@ False
 
 <span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10001</span><span class="p">))</span> <span class="c1"># list with numbers 1-10000</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="mi">5000</span> <span class="c1"># replace with an integer between 1 and 10000 (I suggest big numbers like 500, 2000, so on)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5500</span> <span class="c1"># replace with an integer between 1 and 10000 (I suggest big numbers like 500, 2000, so on)</span>
 
 <span class="n">linear_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># runs procedure</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Found element after 5500 loops in 338 microseconds
+Your number was found at 5499
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -514,7 +557,7 @@ False
 
 <span class="n">lt</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10001</span><span class="p">))</span> <span class="c1"># list with numbers 1-10000</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="mi">149</span> <span class="c1"># replace with an integer between 1 and 10000 (I suggest big numbers like 500, 2000, so on)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">55</span><span class="c1"># replace with an integer between 1 and 10000 (I suggest big numbers like 500, 2000, so on)</span>
 
 <span class="n">binary_search</span><span class="p">(</span><span class="n">lt</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># runs procedure</span>
 </pre></div>
@@ -523,9 +566,42 @@ False
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Element found after 12 loops in 6 microseconds
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>54</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><mark> Graphs on Review Ticket</mark></p>
+<p>Looking at the graphs, even though both graphs contained the same x values, the 1st code gave me much higher values in microseconds(y) than the 2nd code. Therefore, the 2nd graph and code is more efficient. This is because it is finding the element in an overall less time(in microseconds) than the 1st graph.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -542,6 +618,118 @@ False
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Decidable-Problem">
+<a class="anchor" href="#Decidable-Problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decidable Problem<a class="anchor-link" href="#Decidable-Problem"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_smallest_odd</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="c1"># Set the smallest odd number to 1</span>
+  <span class="n">smallest_odd</span> <span class="o">=</span> <span class="mi">1</span>
+  
+  <span class="c1"># Set the current number to 1</span>
+  <span class="n">current_num</span> <span class="o">=</span> <span class="mi">1</span>
+  
+  <span class="c1"># Loop until the current number is greater than n</span>
+  <span class="k">while</span> <span class="n">current_num</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="c1"># If the current number is odd, update the smallest odd number</span>
+    <span class="k">if</span> <span class="n">current_num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="n">smallest_odd</span> <span class="o">=</span> <span class="n">current_num</span>
+      
+      <span class="c1"># Break the loop since we have found the smallest odd number</span>
+ 
+    <span class="k">break</span>
+      
+    <span class="c1"># Increment the current number</span>
+    <span class="n">current_num</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+  <span class="c1"># Return the smallest odd number</span>
+  <span class="k">return</span> <span class="n">smallest_odd</span>
+<span class="n">find_smallest_odd</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="c1">#Since the smallest odd number that is less than or equal to 20 is 1, the output will be 1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Code-that-runs-forever">
+<a class="anchor" href="#Code-that-runs-forever" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code that runs forever<a class="anchor-link" href="#Code-that-runs-forever"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="c1"># Check if the number is less than 2, which is not considered prime</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="kc">False</span>
+  
+  <span class="c1"># Check if the number is divisible by any number less than itself</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="kc">False</span>
+      
+  <span class="c1"># If the number is not divisible by any number less than itself, it is prime</span>
+  <span class="k">return</span> <span class="kc">True</span>
+
+<span class="c1"># Set the current number to 2, which is the smallest prime number</span>
+<span class="n">current_num</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1"># Set a flag to indicate whether the current number is prime</span>
+<span class="n">is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Loop indefinitely</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    
+  <span class="n">current_num</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

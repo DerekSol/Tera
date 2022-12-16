@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      10 min read
     
 </span></p>
 
@@ -127,19 +127,13 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Terms"><mark>Terms</mark><a class="anchor-link" href="#Terms"> </a></h1>
+<h1 id="-Unit-2-Binary/Data-Terms"><mark> Unit 2 Binary/Data Terms</mark><a class="anchor-link" href="#-Unit-2-Binary/Data-Terms"> </a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Variables"><strong>Variables</strong><a class="anchor-link" href="#Variables"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a value that can change, depending on conditions or on information passed to the program.</p>
+<h2 id="Bits">Bits<a class="anchor-link" href="#Bits"> </a></h2><p>A bit is a unit of information that can have only two values: 0 or 1. It is the smallest unit of information that can be stored or processed by a computer. Bits are typically used to represent binary data, which is data that is encoded using only two possible values. In Python you can use "int" data type to represent binary data as a sequence of bits.</p>
 
 </div>
 </div>
@@ -151,8 +145,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;apple&quot;</span> <span class="c1">#fruit is the name, &#39;apple&#39; is the value, and string is the type</span>
-<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#score is the name, 0 is the value, integer is the type</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">binary_number</span> <span class="o">=</span> <span class="mb">0b1010</span>
+<span class="c1"># represents 1010 as an integer</span>
 </pre></div>
 
     </div>
@@ -164,21 +158,31 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Types"><strong>Data Types</strong><a class="anchor-link" href="#Data-Types"> </a></h2>
+<h2 id="Bytes">Bytes<a class="anchor-link" href="#Bytes"> </a></h2><p>A byte is a group of 8 bits. It is a unit of information that can hold a single character in a computer's memory.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>String (or str or text) - combination of any characters<ul>
-<li>Character (or char) - single letters</li>
-<li>Integer (or int) - whole numbers</li>
-<li>Float (or Real) - numbers that contain decimal points, or for fractions.</li>
-<li>Boolean (or bool) - data is restricted to True/False or yes/no options </li>
+<h2 id="Hexadecimals/Nibbles">Hexadecimals/Nibbles<a class="anchor-link" href="#Hexadecimals/Nibbles"> </a></h2><ul>
+<li>a hexadecimal is a base-16 number represented using the symbols 0-9 and A-F. Hexadecimals are often used to represent colors in web development, as they can be more concise and easier to read than longer binary numbers.</li>
+<li>A nibble is a unit of data that is half of a byte (eight bits). It is often represented using a hexadecimal digit, which can represent a value from 0 to 15 in decimal.</li>
 </ul>
-</li>
-</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unsigned-Integer">Unsigned Integer<a class="anchor-link" href="#Unsigned-Integer"> </a></h2><p>An unsigned integer is a type of integer that can only represent non-negative (greater than or equal to zero) whole numbers. It is called "unsigned" because it does not have a sign bit to indicate whether the number is positive or negative. This means that an unsigned integer can represent a larger range of values than a signed integer, which uses a sign bit to indicate the sign of the number.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Signed-Integer">Signed Integer<a class="anchor-link" href="#Signed-Integer"> </a></h2><p>An integer is a whole number that can be either positive or negative. It has no decimal point and can store very large numbers. By default, Python integers are stored as signed integers, which means they can represent both positive and negative numbers.</p>
 
 </div>
 </div>
@@ -190,11 +194,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">integer</span> <span class="o">=</span> <span class="mi">9</span>
-
-<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;words&quot;</span> <span class="c1">#surrounded by quotations</span>
-
-<span class="n">boolean</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># True or false</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">10</span>
+<span class="o">-</span><span class="mi">10</span>
+<span class="mi">12345678901234567890</span>
+<span class="o">-</span><span class="mi">9876543210987654321</span>
+<span class="c1"># All these numbers a valid integers in Python</span>
 </pre></div>
 
     </div>
@@ -206,79 +210,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Assignment-Operators"><strong>Assignment Operators</strong><a class="anchor-link" href="#Assignment-Operators"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>operator used to assign a new value to a variable.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th>Operator</th>
-<th>Description</th>
-<th>Syntax</th>
-<th>Outcome when print(a)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>Assign value of right side of expression to left side operand</td>
-<td>a = b</td>
-<td>b</td>
-</tr>
-<tr>
-<td>+=</td>
-<td>Add right side operand with left side operand and then assign to left operand</td>
-<td>a += b</td>
-<td>a + b</td>
-</tr>
-<tr>
-<td>-=</td>
-<td>Subtract right operand from left operand and then assign to left operand: True if both operands are equal</td>
-<td>a -= b</td>
-<td>a - b</td>
-</tr>
-<tr>
-<td>*=</td>
-<td>Multiply right operand with left operand and then assign to left operand</td>
-<td>a *= b</td>
-<td>a * b</td>
-</tr>
-<tr>
-<td>/=</td>
-<td>Divide left operand with right operand and then assign to left operand</td>
-<td>a /= b</td>
-<td>a / b</td>
-</tr>
-<tr>
-<td>**=</td>
-<td>Calculate exponent(raise power) value using operands and assign value to left operand</td>
-<td>a **= b</td>
-<td>a ^ b</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lists"><strong>Lists</strong><a class="anchor-link" href="#Lists"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>an abstract data type that represents a finite number of ordered values, where the same value may occur more than once.</p>
+<h2 id="Floating-Point">Floating Point<a class="anchor-link" href="#Floating-Point"> </a></h2><p>A floating point number is a number with a decimal point. It is used to represent real numbers, such as 3.14159 or -0.01.</p>
+<p>For example, the following are all valid floating point numbers in Python:</p>
 
 </div>
 </div>
@@ -290,8 +223,346 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;grape&quot;</span><span class="p">,</span> <span class="s2">&quot;strawberry&quot;</span><span class="p">]</span>
-<span class="nb">print</span> <span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">3.14</span>
+<span class="o">-</span><span class="mf">10.6</span>
+<span class="mf">0.0</span>
+<span class="mf">12345.6789</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Boolean">Boolean<a class="anchor-link" href="#Boolean"> </a></h2><p>A boolean is a data type that represents a truth value. It can have two values: True or False.
+Booleans are often used in conditional statements to control the flow of a program</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">x</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is True&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is False&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="ASCII">ASCII<a class="anchor-link" href="#ASCII"> </a></h2><p>ASCII (American Standard Code for Information Interchange) is a character encoding standard that represents text as a series of numbers. It defines a mapping between numerical values and characters, with each character being represented by a unique number between 0 and 127.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unicode">Unicode<a class="anchor-link" href="#Unicode"> </a></h2><p>Unicode is a character encoding standard that represents text as a series of numbers. It is a widely used standard that supports a much larger range of characters than ASCII, including non-Latin scripts and emojis.</p>
+<p>In Python, Unicode characters are represented using the str data type, which is a sequence of Unicode code points.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="RGB">RGB<a class="anchor-link" href="#RGB"> </a></h2><p>A problem solving approach (algorithm) to find a satisfactory solution where finding an optimal or exact solution is impractical or impossible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lossy">Lossy<a class="anchor-link" href="#Lossy"> </a></h2><p>In the context of digital media, "lossy" refers to a type of data compression that reduces the quality of the data in order to save space. Lossy compression algorithms remove data that is not perceived by the human eye or ear, resulting in a smaller file size but lower quality. In Python, you can use various libraries and modules to work with lossy data formats. For</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Open a JPEG image and save it as a PNG image</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;image.jpg&#39;</span><span class="p">)</span>
+<span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lossless">Lossless<a class="anchor-link" href="#Lossless"> </a></h2><p>Lossless compression algorithms remove redundant or unnecessary data from the file, but do not remove any data that is needed to accurately represent the original data. Lossless compression is commonly used for text, data, and other types of files where it is important to preserve the accuracy of the data. For example, the ZIP file format and the PDF document format are both lossless formats that are widely used for storing and distributing digital documents.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">zipfile</span>
+
+<span class="c1"># Create a ZIP file</span>
+<span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">&#39;documents.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">z</span><span class="p">:</span>
+    <span class="n">z</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;document1.txt&#39;</span><span class="p">)</span>
+    <span class="n">z</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;document2.txt&#39;</span><span class="p">)</span>
+
+<span class="c1"># Extract the contents of the ZIP file</span>
+<span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">&#39;documents.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">z</span><span class="p">:</span>
+    <span class="n">z</span><span class="o">.</span><span class="n">extractall</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="-Unit-3-Algorithm/Programming-Terms"><mark> Unit 3 Algorithm/Programming Terms</mark><a class="anchor-link" href="#-Unit-3-Algorithm/Programming-Terms"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h2><p>A variable is a named location in memory that stores a value or reference to a value. When you create a variable, you can specify the value that you want to store in it. You can then use the variable to refer to the value throughout your program.</p>
+<p>For example, you might create a variable called name and store your name in it:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Derek&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types"> </a></h2><p>In Python, data types are used to define the type of a value that can be stored in a variable.</p>
+<p>ex: "int", "float", "str", etc.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Assignment-Operators">Assignment Operators<a class="anchor-link" href="#Assignment-Operators"> </a></h2><p>assignment operators are used to assign a value to a variable. The most basic assignment operator is the = operator, which assigns the value on the right side of the operator to the variable on the left side.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">15</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lists">Lists<a class="anchor-link" href="#Lists"> </a></h2><p>A list is a collection of items that are ordered and changeable. Lists are written with square brackets and the items are separated by commas.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">superheroes</span> <span class="o">=</span> <span class="p">[</span>    <span class="s2">&quot;Superman&quot;</span><span class="p">,</span>    <span class="s2">&quot;Batman&quot;</span><span class="p">,</span>    <span class="s2">&quot;Wonder Woman&quot;</span><span class="p">,</span>    <span class="s2">&quot;The Flash&quot;</span><span class="p">,</span>    <span class="s2">&quot;Green Lantern&quot;</span><span class="p">,</span>    <span class="s2">&quot;Aquaman&quot;</span><span class="p">,</span>    <span class="s2">&quot;Martian Manhunter&quot;</span><span class="p">,</span>    <span class="s2">&quot;Cyborg&quot;</span><span class="p">,</span>    <span class="s2">&quot;Black Canary&quot;</span><span class="p">,</span>    <span class="s2">&quot;Captain Marvel&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2D-Lists">2D Lists<a class="anchor-link" href="#2D-Lists"> </a></h2><p>A 2D list is a list of lists. It is a data structure that allows you to store a collection of items, where each item is a list itself.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries"> </a></h2><p>A dictionary is a collection of key-value pairs. It is an unordered data structure that allows you to store and retrieve data using keys rather than indices.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Alice&quot;</span><span class="p">:</span> <span class="s2">&quot;555-1234&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Bob&quot;</span><span class="p">:</span> <span class="s2">&quot;555-5678&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Eve&quot;</span><span class="p">:</span> <span class="s2">&quot;555-9101&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Class">Class<a class="anchor-link" href="#Class"> </a></h2><p>a class is a blueprint for creating objects. It defines the properties and behaviors that the objects will have.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Dog</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Algorithms,-Sequences,-Selection,-Iteration">Algorithms, Sequences, Selection, Iteration<a class="anchor-link" href="#Algorithms,-Sequences,-Selection,-Iteration"> </a></h2><p>Algorithms: a list set of instructions, used to solve problems or perform tasks.</p>
+<p>Sequence: algorithms do tasks in the order of specification.</p>
+<p>Selection: helps choose two different outcomes based off a decision.</p>
+<p>Iteration: if a condition is true, then the code can repeat.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions"> </a></h2><p>An expression is a piece of code that returns a value. Expressions are made up of variables, operators, and function calls, and they can be used in a variety of contexts, such as assignments, function calls, and control structures.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Comparison-Operators">Comparison Operators<a class="anchor-link" href="#Comparison-Operators"> </a></h2><p>Comparison operators are used to compare the values of two expressions. They return a Boolean value indicating whether the comparison is true or false.</p>
+<p>ex: 'x == y': returns True if x is equal to y, and False otherwise.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Boolean-Expressions-and-Selection">Boolean Expressions and Selection<a class="anchor-link" href="#Boolean-Expressions-and-Selection"> </a></h2><p>a Boolean expression is an expression that evaluates to either True or False. Boolean expressions are often used in control structures, such as if statements and while loops, to determine whether a block of code should be executed.</p>
+<p>Here is an example of an if statement using a Boolean expression in Python:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is positive&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -304,7 +575,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;apple&#39;, &#39;grape&#39;, &#39;strawberry&#39;]
+<pre>x is positive
 </pre>
 </div>
 </div>
@@ -317,13 +588,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2D-Lists"><strong>2D Lists</strong><a class="anchor-link" href="#2D-Lists"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a two-dimensional array can hold more than one set of data</p>
+<h2 id="Boolean-Expressions-and-Iteration">Boolean Expressions and Iteration<a class="anchor-link" href="#Boolean-Expressions-and-Iteration"> </a></h2><p>You can use Boolean expressions in iteration structures, such as for loops and while loops, to control the flow of the loop.</p>
+<p>Here is an example of a while loop using a Boolean expression in Python:</p>
 
 </div>
 </div>
@@ -335,13 +601,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">]]</span>
-
-<span class="k">def</span> <span class="nf">print_matrix4</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">i</span><span class="p">)))</span>
-        
-<span class="n">print_matrix4</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -354,10 +617,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1	2	3
-4	5	6
-7	8	9
- 	0	 
+<pre>5
+4
+3
+2
+1
 </pre>
 </div>
 </div>
@@ -370,182 +634,16 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dictionaries"><strong>Dictionaries</strong><a class="anchor-link" href="#Dictionaries"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>an abstract data type that defines an unordered collection of data as a set of key-value pairs</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Algorithms"><strong>Algorithms</strong><a class="anchor-link" href="#Algorithms"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>a list set of instructions, used to solve problems or perform tasks. <ul>
-<li><strong>Sequence</strong>: algorithms do tasks in the order of specification.</li>
-<li><strong>Selection</strong>: helps choose two different outcomes based off a decision.</li>
-<li><strong>Iteration</strong>: if a condition is true, then the code can repeat.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Expressions"><strong>Expressions</strong><a class="anchor-link" href="#Expressions"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>combination of values and functions that are combined and interpreted to create a new value.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>x + y Addition</li>
-<li>x - y Subtraction</li>
-<li>x * y Multiplication</li>
-<li>x / y Division</li>
-<li>x // y Quotient</li>
-<li>x % y Remainder</li>
-<li>x ** y Exponentiation</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comparison-Operators"><strong>Comparison Operators</strong><a class="anchor-link" href="#Comparison-Operators"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>compares two values against one another.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>a = b - equal to </li>
-<li>a (not equal to symbol) b - not equal to</li>
-<li>a &gt; b - greater than</li>
-<li>a &lt; b - less than </li>
-<li>a (is greater than or equal to symbol) b - greater than or equal to</li>
-<li>a (is less than or equal to symbol) b - less than or equal to</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Boolean-Expressions-and-Selection/Iteration"><strong>Boolean Expressions and Selection/Iteration</strong><a class="anchor-link" href="#Boolean-Expressions-and-Selection/Iteration"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>if a condition is true or false, there is a differnet outcome and if a condition is true, the code repeats an earlier step.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="c1"># selection:</span>
-<span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is small&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;The number is large&quot;</span><span class="p">)</span>
-    
-<span class="c1"># iteration: </span>
-
-<span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The number is small
-6
-7
-8
-9
-10
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Truth-Tables"><strong>Truth Tables</strong><a class="anchor-link" href="#Truth-Tables"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>have two values <ul>
-<li>0 = off, false</li>
-<li>1 = on, true</li>
-<li>Examples <ul>
-<li>0 and 0 = false. And operator means both needs to be true. </li>
-<li>0 or 1 = true. Either or. </li>
-<li>Use this in conditionals (selection). </li>
-<li>XOR = exclusive or. </li>
-<li>Or = similar to true or false. - </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Truth-Tables">Truth Tables<a class="anchor-link" href="#Truth-Tables"> </a></h2><p>A truth table is a way to represent the relationship between different logical statements or expressions. It lists all of the possible combinations of input values for the statements or expressions, and shows the corresponding output values that result.</p>
+<p>have two values</p>
+<p>0 = off, false</p>
+<p>1 = on, true</p>
+<p>Examples</p>
+<p>0 and 0 = false. And operator means both needs to be true.</p>
+<p>0 or 1 = true. Either or.</p>
+<p>Use this in conditionals (selection).</p>
+<p>XOR = exclusive or.</p>
+<p>Or = similar to true or false. -</p>
 <p>Ex: A is true, B is false</p>
 
 </div>
@@ -553,131 +651,14 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bits"><strong>Bits</strong><a class="anchor-link" href="#Bits"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>most basic unit of informartion in computing.</p>
+<h2 id="Characters">Characters<a class="anchor-link" href="#Characters"> </a></h2><p>A character is a single Unicode character, which is a unit of text that represents a letter, number, symbol, or other type of character. Unicode is a standardized character encoding system that represents characters from many different languages and scripts.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ex: 0s and 1s</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bytes"><strong>Bytes</strong><a class="anchor-link" href="#Bytes"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a group of 8 digits or bits operating as one unit.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hexadecimal-/-Nibbles"><strong>Hexadecimal / Nibbles</strong><a class="anchor-link" href="#Hexadecimal-/-Nibbles"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>base 16 numbering system</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Binary-Numbers"><strong>Binary Numbers</strong><a class="anchor-link" href="#Binary-Numbers"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>numbers expressed in the base two numbering systems. they are only 0s and 1s.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Unsigned-Integer"><strong>Unsigned Integer</strong><a class="anchor-link" href="#Unsigned-Integer"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>non-negative integers.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Signed-Integer"><strong>Signed Integer</strong><a class="anchor-link" href="#Signed-Integer"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>32-bit datum, encodes an integer in the range ([-2147483648 to 2147483647]).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Floating-Point"><strong>Floating Point</strong><a class="anchor-link" href="#Floating-Point"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a positive or negative whole number with a decimal point.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>examples: 5.2, 333.09, etc.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Binary-Data-Abstractions"><strong>Binary Data Abstractions</strong><a class="anchor-link" href="#Binary-Data-Abstractions"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>reducing data to simplify it's entirety.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Boolean"><strong>Boolean</strong><a class="anchor-link" href="#Boolean"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>logical data type that can have only the values true or false.</p>
+<h2 id="Strings">Strings<a class="anchor-link" href="#Strings"> </a></h2><p>A string is a sequence of characters. Strings are used to represent text and are often used to store and manipulate data.</p>
 
 </div>
 </div>
@@ -689,12 +670,27 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">brands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;nike&quot;</span><span class="p">,</span> <span class="s2">&quot;adidas&quot;</span><span class="p">,</span> <span class="s2">&quot;underarmour&quot;</span><span class="p">]</span> <span class="c1">#string</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="c1">#integer</span>
-<span class="n">truefalse</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="c1">#boolean</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: &#39;H&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># Output: &#39;l&#39;</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>H
+l
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -703,91 +699,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="ASCII"><strong>ASCII</strong><a class="anchor-link" href="#ASCII"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a character encoding scheme in which each character is represented by a 7-bit (originally) or 8-bit binary sequence.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Unicode"><strong>Unicode</strong><a class="anchor-link" href="#Unicode"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>16-bit character set which describes all of the keyboard characters.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="RGB"><strong>RGB</strong><a class="anchor-link" href="#RGB"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>a problem solving approach (algorithm) to find a satisfactory solution where finding an optimal or exact solution is impractical or impossible.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Compression"><strong>Data Compression</strong><a class="anchor-link" href="#Data-Compression"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>the process of encoding data so that is needs fewer bits/bytes to represent it.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lossy"><strong>Lossy</strong><a class="anchor-link" href="#Lossy"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>data encoding and compression technique that deliberately discards some data in the compression process.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lossless"><strong>Lossless</strong><a class="anchor-link" href="#Lossless"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>data compression algorithm that allows the original data to be perfectly reconstructed from the compressed data</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Class"><strong>Class</strong><a class="anchor-link" href="#Class"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>written in a defined structure to create an object.</p>
+<h2 id="Length">Length<a class="anchor-link" href="#Length"> </a></h2><p>The len() function returns the length of an object. For example, if you have a string, a list, or a tuple, you can use len() to determine the number of elements it contains.</p>
+<p>Here's an example of using len() with a string:</p>
 
 </div>
 </div>
@@ -799,11 +712,27 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-  <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -812,33 +741,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Characters"><strong>Characters</strong><a class="anchor-link" href="#Characters"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>display unit of information equivalent to one alphabetic letter or symbol.</p>
+<h2 id="Concatenation">Concatenation<a class="anchor-link" href="#Concatenation"> </a></h2><p>Concatenation refers to the operation of joining two or more strings together to create a single string. This can be done using the + operator, which is used to add two or more strings together.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Strings"><strong>Strings</strong><a class="anchor-link" href="#Strings"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ordered sequences of characters.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Length"><strong>Length</strong><a class="anchor-link" href="#Length"> </a></h2>
 </div>
 </div>
 </div>
@@ -849,10 +753,27 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span> <span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span> <span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+ <span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;world&#39;</span>
+ <span class="n">s3</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">s2</span>
+ <span class="nb">print</span><span class="p">(</span><span class="n">s3</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello world
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -861,80 +782,30 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>the number of symbols output.</p>
+<h2 id="Upper">Upper<a class="anchor-link" href="#Upper"> </a></h2><p>Used to check if the argument contains any uppercase characters.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Concatenation"><strong>Concatenation</strong><a class="anchor-link" href="#Concatenation"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>String concatenation is combining 2 or more strings to make a new strings in order to create a new string</p>
-<p>concat() in pseudocode and varys from language to language can be used to combine to strings such as concat("cookie","monster") returns cookiemonster</p>
+<h2 id="Lower">Lower<a class="anchor-link" href="#Lower"> </a></h2><p>Returns the lowercase string from the given string.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Upper"><strong>Upper</strong><a class="anchor-link" href="#Upper"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>used to check if the argument contains any uppercase characters.</p>
-<ul>
-<li>returns "True" if all characters in the string are uppercase, Otherwise, It returns "False".</li>
-</ul>
+<h2 id="Traversing-Strings">Traversing Strings<a class="anchor-link" href="#Traversing-Strings"> </a></h2><p>The process of going through a String one character at a time, often using loops.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lower"><strong>Lower</strong><a class="anchor-link" href="#Lower"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>returns the lowercase string from the given string.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Traversing-Strings"><strong>Traversing Strings</strong><a class="anchor-link" href="#Traversing-Strings"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>the process of going through a String one character at a time, often using loops.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-If,-Elif,-Else-conditionals"><strong>Python If, Elif, Else conditionals</strong><a class="anchor-link" href="#Python-If,-Elif,-Else-conditionals"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>If: statement executes a piece of code when one statement is false and the following statement is true. </li>
-<li>Elif: first if statement isn't true, but want to check for another condition.</li>
-<li>Else: executes if "if" isn't true. </li>
-</ul>
+<h2 id="Python-If,-Elif,-Else-Conditionals">Python If, Elif, Else Conditionals<a class="anchor-link" href="#Python-If,-Elif,-Else-Conditionals"> </a></h2><p>If: statement executes a piece of code when one statement is false and the following statement is true.</p>
+<p>Elif: first if statement isn't true, but want to check for another condition.</p>
+<p>Else: executes if "if" isn't true.</p>
 
 </div>
 </div>
@@ -951,14 +822,14 @@ window.onload = wrap_img;
 <span class="n">experienced</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="c1"># using operators to determine the salary</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">hours</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">):</span>
-    <span class="n">sal</span> <span class="o">=</span> <span class="s2">&quot;150k&quot;</span>
+    <span class="n">sal</span> <span class="o">=</span> <span class="s2">&quot;130k&quot;</span>
 <span class="k">elif</span> <span class="p">(</span><span class="n">hours</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">):</span>
     <span class="n">sal</span> <span class="o">=</span> <span class="s2">&quot;90k&quot;</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">sal</span> <span class="o">=</span> <span class="s2">&quot;50k&quot;</span>
     <span class="n">experienced</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="c1"># printing the final statement </span>
-<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;The person has a salary of:&#39;</span> <span class="p">,</span> <span class="n">sal</span><span class="p">,</span><span class="s1">&#39;and has experience:&#39;</span> <span class="p">,</span> <span class="n">experienced</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Derek has a salary of:&#39;</span> <span class="p">,</span> <span class="n">sal</span><span class="p">,</span><span class="s1">&#39;and has experience:&#39;</span> <span class="p">,</span> <span class="n">experienced</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -971,7 +842,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The person has a salary of: 150k and has experience: True
+<pre>Derek has a salary of: 130k and has experience: True
 </pre>
 </div>
 </div>
@@ -984,43 +855,108 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Nested-Selection-Statements"><strong>Nested Selection Statements</strong><a class="anchor-link" href="#Nested-Selection-Statements"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>when more than one decision must be made before the appropriate action can be taken.</p>
+<h2 id="Nested-Selection-Statements">Nested Selection Statements<a class="anchor-link" href="#Nested-Selection-Statements"> </a></h2><p>Conditional within a conditional. When more than one decision must be made before the appropriate action can be taken.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-For-While-loops-with-Range-with-List"><strong>Python For While loops with Range with List</strong><a class="anchor-link" href="#Python-For-While-loops-with-Range-with-List"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.</p>
+<h2 id="Python-For,-While-loops-with-Range,-with-List">Python For, While loops with Range, with List<a class="anchor-link" href="#Python-For,-While-loops-with-Range,-with-List"> </a></h2><p>Returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Combining-loops-with-conditionals-to-Break,-Continue"><strong>Combining loops with conditionals to Break, Continue</strong><a class="anchor-link" href="#Combining-loops-with-conditionals-to-Break,-Continue"> </a></h2>
+<h2 id="Combining-loops-with-conditionals-to-break,-continue">Combining loops with conditionals to break, continue<a class="anchor-link" href="#Combining-loops-with-conditionals-to-break,-continue"> </a></h2><p>A statement that controls the flow of execution depending on some condition.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>a statement that controls the flow of execution depending on some condition.</p>
+<h2 id="Procedural-Abstraction">Procedural Abstraction<a class="anchor-link" href="#Procedural-Abstraction"> </a></h2><p>A function encapsulates a bundle of program statements (code): The function gives us a name for the statements, a way to invoke them at a high-level.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-Def-procedures">Python Def procedures<a class="anchor-link" href="#Python-Def-procedures"> </a></h2><p>def is the keyword for defining a function.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I am learning Python Function&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>A parameter is the variable listed inside the parentheses in the function definition. An argument is the value that is sent to the function when it is called.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">data</span> <span class="o">*</span> <span class="mi">5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Return-Values">Return Values<a class="anchor-link" href="#Return-Values"> </a></h2><p>The value that a function returns to the caller is generally known as the function's return value. All Python functions have a return value, either explicit or implicit.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">addition</span><span class="p">(</span><span class="n">first_number</span><span class="p">,</span> <span class="n">second_number</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">first_number</span> <span class="o">+</span> <span class="n">second_number</span>
+    <span class="k">return</span> <span class="n">answer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

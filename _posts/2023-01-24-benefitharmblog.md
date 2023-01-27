@@ -13,6 +13,4 @@ One harmful effect is that society can adapt so much to computers that it can ta
 ## Beneficial and Harmful Effects related to our project
 One benefit from our project is that it will help people become more healthy by tracking how much they eat and by plugging in information to attain a certain diet goal. Another benefit of our project is that it is applicable to anyone, and is different for everyone depending on the goal they want to reach in terms of their fitness lifestyle. One last benefit is that it calculates all the calories and macros that you need without you having to do it manually yourself.
 
-A harmful effect of our project is that it could increase competition between other websites and apps that also track your calories and help you reach a fitness goal. Another harmful effect would be that 
-
-2. Regarding the dopamine issues above 
+A potential harmful effect of our project is that it could increase competition between other websites and apps that also track your calories and help you reach a fitness goal, or it could be hard for our website to compete if not performed well.  

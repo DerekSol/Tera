@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "MCQ 2 Blog",
-            "content": "Score of MCQ #2 . . Test Corrections . Question 22 . When looking back at this question, I realized that Algorithm A does indeed calculate the correct average as well. For some reason I thought that for Algorithm A, the person in step two was a continuation for step 3, but those are two separate people. Therefore, I thought that Algorithm A wouldn’t calculate the average because of that. But because Step 2 and 3 are two different people, it makes sense that it would calculate the correct average as well. .",
+            "content": "Score of MCQ #2 . . Test Corrections . Question 22 . When looking back at this question, I realized that Algorithm A does indeed calculate the correct average as well. For some reason I thought that for Algorithm A, the person in step two was a continuation for step 3, but those are two separate people. Therefore, I thought that Algorithm A wouldn’t calculate the average because of that. But because Step 2 and 3 are two different people, it makes sense that it would calculate the correct average as well. . Question 28 . For this question I picked answers A and D, however it was A and C. I initially had C but I thought it was wrong because I believed it would go in a continuous circle reaching the same starting point. However I realized that after repeating, it will continue to move forward and rotate left, but doesn’t necessarily move in the left direction. That it why C is right and should be A and C and not A and D. .",
             "url": "https://dereksol.github.io/Tera/apcsp%20week%2020/2023/01/30/MCQBlog.html",
             "relUrl": "/apcsp%20week%2020/2023/01/30/MCQBlog.html",
             "date": " • Jan 30, 2023"

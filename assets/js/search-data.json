@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "MCQ 2 Blog",
-            "content": "Score of MCQ #2 . . Test Corrections . Question . .",
+            "content": "Score of MCQ #2 . . Test Corrections . Question 22 . When looking back at this question, I realized that Algorithm A does indeed calculate the correct average as well. For some reason I thought that for Algorithm A, the person in step two was a continuation for step 3, but those are two separate people. Therefore, I thought that Algorithm A wouldn’t calculate the average because of that. But because Step 2 and 3 are two different people, it makes sense that it would calculate the correct average as well. .",
             "url": "https://dereksol.github.io/Tera/apcsp%20week%2020/2023/01/30/MCQBlog.html",
             "relUrl": "/apcsp%20week%2020/2023/01/30/MCQBlog.html",
             "date": " • Jan 30, 2023"

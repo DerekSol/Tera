@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Welcome to our lecture!
-title: Variables, Assignments, and Data Abstraction
+title: Unit 3 Sections 1-2
 badges: true
 comments: true
 categories: [lectures]

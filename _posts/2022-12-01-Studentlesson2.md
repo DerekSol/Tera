@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: Mathematical Expressions and Strings
+title: Unit 3 Sections 3-4
 comments: true
 permalink: /jupyter/lesson2
 categories: [jupyter]

@@ -1,6 +1,11 @@
 ---
 keywords: fastai
-title: Title
+title: 2.4 HACKS
+toc: true
+image: /images/python.png
+categories: []
+type: ap
+week: 26
 nb_path: _notebooks/2023-03-14-Databasehacks.ipynb
 layout: notebook
 ---

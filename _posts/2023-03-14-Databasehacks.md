@@ -369,6 +369,24 @@ layout: notebook
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, &#39;Moana&#39;, &#39;Disney&#39;, &#39;Moana&#39;, &#39;95%&#39;)
+(2, &#39;Kung Fu Panda&#39;, &#39;Dreamworks&#39;, &#39;Po&#39;, &#39;87%&#39;)
+(3, &#39;Inside Out&#39;, &#39;Disney&#39;, &#39;Joy&#39;, &#39;98%&#39;)
+(4, &#39;Coco&#39;, &#39;Disney&#39;, &#39;Miguel&#39;, &#39;97%&#39;)
+(5, &#39;Snow White and the Seven Dwarfs&#39;, &#39;Disney&#39;, &#39;Snow White&#39;, &#39;97%&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 

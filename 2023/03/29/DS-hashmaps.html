@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      10 min read
     
 </span></p>
 
@@ -539,6 +539,252 @@ producer: {'Louis Bell', 'Jack Antonoff', 'Joel Little', 'Frank Dukes', 'Taylor 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">giveortake_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Give or Take"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Giveon"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"R&amp;B"</span><span class="p">,</span> <span class="s2">"Pop"</span><span class="p">],</span> <span class="c1"># genre has a list</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span> <span class="c1">#tracks has a dictionary</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"Let Me Go"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"Scarred"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Dec 11th"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"This Will Do"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"Get to You"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"Tryna Be"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"Make You Mine"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"July 16th"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"For Tonight"</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">"Lost Me"</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s2">"Lie Again"</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s2">"Another Heartbreak"</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s2">"At Least We Tried"</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s2">"You Need To Calm Down"</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s2">"Remind Me"</span><span class="p">,</span>
+        <span class="mi">16</span><span class="p">:</span> <span class="s2">"Unholy Matrimony"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># Printing the dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Give or Take', 'artist': 'Giveon', 'year': 2022, 'genre': ['R&amp;B', 'Pop'], 'tracks': {1: 'Let Me Go', 2: 'Scarred', 3: 'Dec 11th', 4: 'This Will Do', 5: 'Get to You', 6: 'Tryna Be', 7: 'Make You Mine', 8: 'July 16th', 9: 'For Tonight', 10: 'Lost Me', 11: 'Lie Again', 12: 'Another Heartbreak', 13: 'At Least We Tried', 14: 'You Need To Calm Down', 15: 'Remind Me', 16: 'Unholy Matrimony'}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'Let Me Go', 2: 'Scarred', 3: 'Dec 11th', 4: 'This Will Do', 5: 'Get to You', 6: 'Tryna Be', 7: 'Make You Mine', 8: 'July 16th', 9: 'For Tonight', 10: 'Lost Me', 11: 'Lie Again', 12: 'Another Heartbreak', 13: 'At Least We Tried', 14: 'You Need To Calm Down', 15: 'Remind Me', 16: 'Unholy Matrimony'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">)[</span><span class="mi">11</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lie Again
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">giveortake_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span> <span class="p">([</span><span class="s1">'Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chahayed, Don Mills, Giveon'</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Give or Take', 'artist': 'Giveon', 'year': 2022, 'genre': ['R&amp;B', 'Pop'], 'tracks': {1: 'Let Me Go', 2: 'Scarred', 3: 'Dec 11th', 4: 'This Will Do', 5: 'Get to You', 6: 'Tryna Be', 7: 'Make You Mine', 8: 'July 16th', 9: 'For Tonight', 10: 'Lost Me', 11: 'Lie Again', 12: 'Another Heartbreak', 13: 'At Least We Tried', 14: 'You Need To Calm Down', 15: 'Remind Me', 16: 'Unholy Matrimony'}, 'producer': {'Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chahayed, Don Mills, Giveon'}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">giveortake_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">17</span><span class="p">:</span> <span class="s2">"Heartbreak Anniversary"</span><span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Give or Take', 'artist': 'Giveon', 'year': 2022, 'genre': ['R&amp;B', 'Pop'], 'tracks': {1: 'Let Me Go', 2: 'Scarred', 3: 'Dec 11th', 4: 'This Will Do', 5: 'Get to You', 6: 'Tryna Be', 7: 'Make You Mine', 8: 'July 16th', 9: 'For Tonight', 10: 'Lost Me', 11: 'Lie Again', 12: 'Another Heartbreak', 13: 'At Least We Tried', 14: 'You Need To Calm Down', 15: 'Remind Me', 16: 'Unholy Matrimony', 17: 'Heartbreak Anniversary'}, 'producer': {'Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chahayed, Don Mills, Giveon'}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">giveortake_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>title: Give or Take
+artist: Giveon
+year: 2022
+genre: ['R&amp;B', 'Pop']
+tracks: {1: 'Let Me Go', 2: 'Scarred', 3: 'Dec 11th', 4: 'This Will Do', 5: 'Get to You', 6: 'Tryna Be', 7: 'Make You Mine', 8: 'July 16th', 9: 'For Tonight', 10: 'Lost Me', 11: 'Lie Again', 12: 'Another Heartbreak', 13: 'At Least We Tried', 14: 'You Need To Calm Down', 15: 'Remind Me', 16: 'Unholy Matrimony', 17: 'Heartbreak Anniversary'}
+producer: {'Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chahayed, Don Mills, Giveon'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to know about the album?"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">giveortake_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid Search"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">giveortake_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+
+<span class="n">search</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

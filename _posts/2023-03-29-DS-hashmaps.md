@@ -273,8 +273,8 @@ The Man
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">19</span><span class="p">:</span> <span class="s2">&quot;All Of The Girls You Loved Before&quot;</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
-<span class="c1"># </span>
-<span class="c1"># </span>
+<span class="c1"># change tracks to genre, then put the new name &quot;electropop&quot; in the curley brackets instead of &quot;All Of The Girls You Loved Before&quot;</span>
+<span class="c1">#  </span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -312,7 +312,7 @@ The Man
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
 
 <span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
+<span class="c1"># </span>
 <span class="c1">#</span>
 </pre></div>
 
@@ -359,8 +359,8 @@ producer: {&#39;Louis Bell&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;,
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># </span>
+<span class="c1"># </span>
 </pre></div>
 
     </div>
@@ -643,6 +643,20 @@ producer: {&#39;Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chah
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Giveon
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

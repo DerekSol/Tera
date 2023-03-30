@@ -359,7 +359,7 @@ producer: {&#39;Louis Bell&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;,
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1"># </span>
+<span class="c1">#  </span>
 <span class="c1"># </span>
 </pre></div>
 

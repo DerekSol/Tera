@@ -236,7 +236,7 @@ The Man
 <span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;producer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span> <span class="p">([</span><span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack Antonoff&#39;</span><span class="p">,</span> <span class="s1">&#39;Joel Little&#39;</span><span class="p">,</span> <span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Louis Bell&#39;</span><span class="p">,</span> <span class="s1">&#39;Frank Dukes&#39;</span><span class="p">])</span>
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
 <span class="c1"># make it a set</span>
-<span class="c1">#</span>
+<span class="c1"># sets make it so that no duplicates will show</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>

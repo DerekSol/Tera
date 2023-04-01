@@ -359,7 +359,7 @@ producer: {&#39;Louis Bell&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;,
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#  </span>
+<span class="c1"># </span>
 <span class="c1"># </span>
 </pre></div>
 
@@ -652,7 +652,7 @@ producer: {&#39;Cardo Got Wings, Boi-1da, Sevn Thomas, Jahaan Sweet, Rogét Chah
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Giveon
+<pre>Give or Take
 </pre>
 </div>
 </div>

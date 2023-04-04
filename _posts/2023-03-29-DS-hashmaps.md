@@ -395,6 +395,14 @@ producer: {&#39;Louis Bell&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;,
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html alt="Screen Shot 2023-04-04 at 12 06 09 PM" max-width="706" file="<a href="https://user-images.githubusercontent.com/111466901/229894908-cf952b3c-b6d4-448d-a500-bd3761d86765.png">https://user-images.githubusercontent.com/111466901/229894908-cf952b3c-b6d4-448d-a500-bd3761d86765.png</a>" %}
+{% include image.html alt="Screen Shot 2023-04-04 at 12 08 04 PM" max-width="702" file="<a href="https://user-images.githubusercontent.com/111466901/229895299-0ca65384-6300-43bf-a79c-c4e9fbddbc4b.png">https://user-images.githubusercontent.com/111466901/229895299-0ca65384-6300-43bf-a79c-c4e9fbddbc4b.png</a>" %}</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">

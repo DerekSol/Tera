@@ -1,0 +1,98 @@
+
+// Variables
+$primary-color: #FFA500;
+$secondary-color: #333333;
+$bg-color: #F5F5F5;
+$card-bg-color: #FFFFFF;
+$card-hover-bg-color: darken($card-bg-color, 10%);
+$player-card-width: 300px;
+$player-card-height: 400px;
+$players-per-row: 3;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  height: 100px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+// Players section
+.players-section {
+  margin-bottom: 40px;
+  
+  h2 {
+    color: $secondary-color;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .players-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .player-card {
+      background-color: $card-bg-color;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      height: $player-card-height;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+      width: $player-card-width;
+      
+      &:hover {
+        background-color: $card-hover-bg-color;
+      }
+      
+      img {
+        height: 200px;
+        width: 100%;
+      }
+      
+      h3 {
+        color: $secondary-color;
+        font-size: 24px;
+        margin: 20px 0 10px;
+      }
+      
+      p {
+        color: $secondary-color;
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+    
+    @for $i from 1 through $players-per-row {
+      .player-card:nth-child(#{$players-per-row}n+#{$i}) {
+        margin-right: 0;
+      }
+    }
+  }
+}

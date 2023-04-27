@@ -898,12 +898,17 @@ Fun Fact: Variables in SASS came before CSS and often SASS has features long bef
 <h2 id="Part-1:-Reflections-0.4-Points">Part 1: Reflections 0.4 Points<a class="anchor-link" href="#Part-1:-Reflections-0.4-Points"> </a></h2><ul>
 <li>Write a short description of each key feature of Sass and compare it to how it to CSS and how using Sass makes your life easier when using all the features. Include examples of how it would have made prior features from past projects simpler to implement. Also answer the questions indicated as hack questions.</li>
 </ul>
-<p>SASS Functions:
-Using Built-In Functions:
-Math Functions:
-Color Functions:
-String Functions:
-Creating Custom Functions:</p>
+<p><b>SASS Functions</b></p>
+<p><b>SASS functions enable us to define complex calculations and transformations that could be done in the stylesheet. It responsible for operating on values, manipulate data, etc. There are built in functions you make yourself, these are things like JavaScript and Python. SASS functions able to do arithmetic operations, manipulate  colors, work with strings, etc. Functions are definitely similar to programming languages, but they use SASS stylesheets to generate CSS code.</b></p>
+<p><b>Math Functions:</b></p>
+<p><b>SASS has many functions that allow you to do mathematic operations like ones in Python. A math function in Sass can make your code much easier to read and maintain, as well as reducing the risk of errors that can occur when performing complex calculations manually in CSS.</b></p>
+<p><b>Color Functions:</b></p>
+<p><b>Color is important part of web design, and making a web page look well put together. Sass gives several built-in color functions that make it easier to manipulate colors in stylesheets. These functions can be used to adjust the brightness, saturation, hue, and other properties of colors. Some examples of color functions in Sass include darken(), lighten(), saturate(), desaturate(), and mix(), and many more.</b></p>
+<p><b>String Functions:</b></p>
+<p><b>Strings are almost always used in data type in programming, and Sass provides several built-in string functions that make it easier to manipulate strings in stylesheets. These functions can be used to extract substrings, concatenate strings, convert strings to uppercase or lowercase, and perform other operations on strings. Some examples of string functions in Sass include str-slice(), str-insert(), str-length(), and to-upper-case(), etc.</b></p>
+<p><b>Custom Functions:</b></p>
+<p><b>You can create your own functions in SASS by using @function name(arguments){}. @return is very similar to return in Javascript/Python, both are responsible for returning a value from the function. Functions are given values, take it in, perform the calculations, and then output the result.</b></p>
+<p><b>An example of how prior features in my project would have been easier if I used SASS was definitely designing the frontend to look clean and colorful. I could of implemented the functions darken(), lighten(), saturate(), desaturate(), and mix() to save more time than HTMLing a bunch of code to switch colors and what not.</b></p>
 <h2 id="Part-2:-Sass-Demo-0.5+-Points">Part 2: Sass Demo 0.5+ Points<a class="anchor-link" href="#Part-2:-Sass-Demo-0.5+-Points"> </a></h2><ul>
 <li>Using at least 3 or more sass features create a UI demo that may be used for future or current projects and reflect on how this was more effective than doing the same task using only regular features of CSS. Extra points will be awarded based on creativity and extra addition of features from SASS. </li>
 </ul>

@@ -88,6 +88,9 @@ Computer Network –> A computer network is a group of interconnected computing 
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
+<img width="518" alt="Screen Shot 2023-05-01 at 12 03 53 PM" src="https://user-images.githubusercontent.com/111466901/235512168-66a596ae-4142-4c3e-a980-87ddeb58fe83.png">
+
+
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
 ```

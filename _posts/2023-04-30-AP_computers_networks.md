@@ -68,7 +68,7 @@ Computer Network –> A computer network is a group of interconnected computing 
 - T
 - F
 - F
-- T
+- 
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.

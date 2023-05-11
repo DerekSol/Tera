@@ -117,7 +117,7 @@ The "ip" layer is responsible for packetizing data received from the TCP layer o
 The "network" layer is responsible for ***routing data packets between networks*** using the Internet Protocol (IP). This layer handles tasks such as packet addressing and routing, fragmentation and reassembly, and ***network congestion*** control.
 
 
-### Fault Tolerance
+#### Fault Tolerance
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.

@@ -132,77 +132,74 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
-<span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
-    <span class="c">&lt;!--</span> <span class="nx">Load</span> <span class="nx">jQuery</span><span class="p">,</span> <span class="nx">DataTables</span> <span class="nx">style</span> <span class="nx">and</span> <span class="nx">scripts</span> <span class="o">--&gt;</span>
-    <span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">language</span><span class="o">=</span><span class="s2">&quot;javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-    <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">language</span><span class="o">=</span><span class="s2">&quot;javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-<span class="o">&lt;</span><span class="err">/head&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Load jQuery, DataTables style and scripts --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;searchBar&quot;</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&quot;Search for character&quot;</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;overwatchTable&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">thead</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;overwatchHead&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>ID<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Role<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Ultimate Ability<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tbody</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;overwatchBody&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 
-    <span class="o">&lt;</span><span class="nx">table</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;overwatchTable&quot;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;table&quot;</span> <span class="nx">style</span><span class="o">=</span><span class="s2">&quot;width:100%&quot;</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">thead</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;overwatchHead&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">ID</span><span class="o">&lt;</span><span class="err">/th&gt;</span>
-                <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Name</span><span class="o">&lt;</span><span class="err">/th&gt;</span>
-                <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Role</span><span class="o">&lt;</span><span class="err">/th&gt;</span>
-                <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Ultimate</span> <span class="nx">Ability</span><span class="o">&lt;</span><span class="err">/th&gt;</span>
-            <span class="o">&lt;</span><span class="err">/tr&gt;</span>
-        <span class="o">&lt;</span><span class="err">/thead&gt;</span>
-        <span class="o">&lt;</span><span class="nx">tbody</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;overwatchBody&quot;</span><span class="o">&gt;&lt;</span><span class="err">/tbody&gt;</span>
-    <span class="o">&lt;</span><span class="err">/table&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Define Overwatch character data</span>
+        <span class="kd">var</span> <span class="nx">characters</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Tracer&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Damage&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Pulse Bomb&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Reinhardt&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Tank&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Earthshatter&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">3</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Mercy&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Support&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Valkyrie&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Genji&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Damage&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Dragonblade&quot;</span> <span class="p">}</span>
+            <span class="c1">// Add more character objects as needed</span>
+        <span class="p">];</span>
 
-    <span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-            <span class="c1">// Define Overwatch character data</span>
-            <span class="kd">var</span> <span class="nx">characters</span> <span class="o">=</span> <span class="p">[</span>
-                <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Tracer&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Damage&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Pulse Bomb&quot;</span> <span class="p">},</span>
-                <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Reinhardt&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Tank&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Earthshatter&quot;</span> <span class="p">},</span>
-                <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">3</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Mercy&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Support&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Valkyrie&quot;</span> <span class="p">},</span>
-                <span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Genji&quot;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;Damage&quot;</span><span class="p">,</span> <span class="nx">ultimate</span><span class="o">:</span> <span class="s2">&quot;Dragonblade&quot;</span> <span class="p">}</span>
-                <span class="c1">// Add more character objects as needed</span>
-            <span class="p">];</span>
+        <span class="c1">// Populate the table with character data</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">character</span> <span class="k">of</span> <span class="nx">characters</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#overwatchBody&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;tr&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
+                <span class="nx">character</span><span class="p">.</span><span class="nx">id</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
+                <span class="nx">character</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
+                <span class="nx">character</span><span class="p">.</span><span class="nx">role</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
+                <span class="nx">character</span><span class="p">.</span><span class="nx">ultimate</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
 
-            <span class="c1">// Populate the table with character data</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">character</span> <span class="k">of</span> <span class="nx">characters</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#overwatchBody&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;tr&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                    <span class="nx">character</span><span class="p">.</span><span class="nx">id</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                    <span class="nx">character</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                    <span class="nx">character</span><span class="p">.</span><span class="nx">role</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                    <span class="nx">character</span><span class="p">.</span><span class="nx">ultimate</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">);</span>
-            <span class="p">}</span>
-
-            <span class="c1">// Initialize DataTables with custom options</span>
-            <span class="kd">var</span> <span class="nx">table</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#overwatchTable&#39;</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
-                <span class="nx">paging</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable pagination</span>
-                <span class="nx">ordering</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable sorting</span>
-                <span class="nx">searching</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable default searching</span>
-                <span class="nx">responsive</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable responsive design</span>
-                <span class="c1">// Add additional options or callbacks as needed</span>
-            <span class="p">});</span>
-
-            <span class="c1">// Add event listener for search bar input</span>
-            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#searchBar&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-                <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
-            <span class="p">});</span>
-
-            <span class="c1">// Custom search function</span>
-            <span class="kd">function</span> <span class="nx">customSearch</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
-            <span class="p">}</span>
-
-            <span class="c1">// Override default DataTables search behavior</span>
-            <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">dataTable</span><span class="p">.</span><span class="nx">ext</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">searchData</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">rowData</span><span class="p">,</span> <span class="nx">counter</span><span class="p">)</span> <span class="p">{</span>
-                <span class="kd">var</span> <span class="nx">searchValue</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#searchBar&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">().</span><span class="nx">toLowerCase</span><span class="p">();</span>
-                <span class="kd">var</span> <span class="nx">rowDataLowerCase</span> <span class="o">=</span> <span class="nx">searchData</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">();</span>
-                <span class="k">return</span> <span class="nx">rowDataLowerCase</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchValue</span><span class="p">);</span>
-            <span class="p">});</span>
+        <span class="c1">// Initialize DataTables with custom options</span>
+        <span class="kd">var</span> <span class="nx">table</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#overwatchTable&#39;</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
+            <span class="nx">paging</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable pagination</span>
+            <span class="nx">ordering</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable sorting</span>
+            <span class="nx">searching</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Disable default searching</span>
+            <span class="nx">lengthChange</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// Disable showing entries</span>
+            <span class="nx">responsive</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable responsive design</span>
+            <span class="c1">// Add additional options or callbacks as needed</span>
         <span class="p">});</span>
-    <span class="o">&lt;</span><span class="err">/script&gt;</span>
-<span class="o">&lt;</span><span class="err">/body&gt;</span>
+
+        <span class="c1">// Add event listener for search bar input</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#searchBar&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
+        <span class="p">});</span>
+
+        <span class="c1">// Custom search function</span>
+        <span class="kd">function</span> <span class="nx">customSearch</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Override default DataTables search behavior</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">dataTable</span><span class="p">.</span><span class="nx">ext</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">searchData</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">rowData</span><span class="p">,</span> <span class="nx">counter</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">searchValue</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#searchBar&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">().</span><span class="nx">toLowerCase</span><span class="p">();</span>
+            <span class="kd">var</span> <span class="nx">rowDataLowerCase</span> <span class="o">=</span> <span class="nx">searchData</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">();</span>
+            <span class="k">return</span> <span class="nx">rowDataLowerCase</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchValue</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 
     </div>
@@ -215,84 +212,75 @@ window.onload = wrap_img;
 <div class="output_area">
 
 
-
-
-<div id="10a70469-bd8c-43b3-bde7-a45c3ee4e141"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#10a70469-bd8c-43b3-bde7-a45c3ee4e141');
+<div class="output_html rendered_html output_subarea ">
 <head>
     <!-- Load jQuery, DataTables style and scripts -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-&lt;/head&gt;
+</head>
 
-<body>
-    <input type="text" id="searchBar" placeholder="Search for character" />
+<table id="overwatchTable" class="table" style="width:100%">
+    <thead id="overwatchHead">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Ultimate Ability</th>
+        </tr>
+    </thead>
+    <tbody id="overwatchBody"></tbody>
+</table>
 
-    <table id="overwatchTable" class="table" style="width:100%">
-        <thead id="overwatchHead">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Ultimate Ability</th>
-            </tr>
-        </thead>
-        <tbody id="overwatchBody"></tbody>
-    </table>
+<script>
+    $(document).ready(function() {
+        // Define Overwatch character data
+        var characters = [
+            { id: 1, name: "Tracer", role: "Damage", ultimate: "Pulse Bomb" },
+            { id: 2, name: "Reinhardt", role: "Tank", ultimate: "Earthshatter" },
+            { id: 3, name: "Mercy", role: "Support", ultimate: "Valkyrie" },
+            { id: 4, name: "Genji", role: "Damage", ultimate: "Dragonblade" }
+            // Add more character objects as needed
+        ];
 
-    <script>
-        $(document).ready(function() {
-            // Define Overwatch character data
-            var characters = [
-                { id: 1, name: "Tracer", role: "Damage", ultimate: "Pulse Bomb" },
-                { id: 2, name: "Reinhardt", role: "Tank", ultimate: "Earthshatter" },
-                { id: 3, name: "Mercy", role: "Support", ultimate: "Valkyrie" },
-                { id: 4, name: "Genji", role: "Damage", ultimate: "Dragonblade" }
-                // Add more character objects as needed
-            ];
+        // Populate the table with character data
+        for (const character of characters) {
+            $('#overwatchBody').append('<tr><td>' +
+                character.id + '</td><td>' +
+                character.name + '</td><td>' +
+                character.role + '</td><td>' +
+                character.ultimate + '</td></tr>');
+        }
 
-            // Populate the table with character data
-            for (const character of characters) {
-                $('#overwatchBody').append('<tr><td>' +
-                    character.id + '</td><td>' +
-                    character.name + '</td><td>' +
-                    character.role + '</td><td>' +
-                    character.ultimate + '</td></tr>');
-            }
-
-            // Initialize DataTables with custom options
-            var table = $('#overwatchTable').DataTable({
-                paging: true, // Enable pagination
-                ordering: true, // Enable sorting
-                searching: true, // Enable default searching
-                responsive: true, // Enable responsive design
-                // Add additional options or callbacks as needed
-            });
-
-            // Add event listener for search bar input
-            $('#searchBar').on('keyup', function() {
-                table.search(this.value).draw();
-            });
-
-            // Custom search function
-            function customSearch(value) {
-                table.search(value).draw();
-            }
-
-            // Override default DataTables search behavior
-            $.fn.dataTable.ext.search.push(function(settings, searchData, index, rowData, counter) {
-                var searchValue = $('#searchBar').val().toLowerCase();
-                var rowDataLowerCase = searchData.join(' ').toLowerCase();
-                return rowDataLowerCase.includes(searchValue);
-            });
+        // Initialize DataTables with custom options
+        var table = $('#overwatchTable').DataTable({
+            paging: true, // Enable pagination
+            ordering: true, // Enable sorting
+            searching: true, // Disable default searching
+            lengthChange: false, // Disable showing entries
+            responsive: true, // Enable responsive design
+            // Add additional options or callbacks as needed
         });
-    </script>
-</body>
 
-&lt;/script&gt;
+        // Add event listener for search bar input
+        $('#searchBar').on('keyup', function() {
+            table.search(this.value).draw();
+        });
+
+        // Custom search function
+        function customSearch(value) {
+            table.search(value).draw();
+        }
+
+        // Override default DataTables search behavior
+        $.fn.dataTable.ext.search.push(function(settings, searchData, index, rowData, counter) {
+            var searchValue = $('#searchBar').val().toLowerCase();
+            var rowDataLowerCase = searchData.join(' ').toLowerCase();
+            return rowDataLowerCase.includes(searchValue);
+        });
+    });
+</script>
+
 </div>
 
 </div>

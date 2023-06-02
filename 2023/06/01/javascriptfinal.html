@@ -140,6 +140,8 @@ window.onload = wrap_img;
     <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;searchBar&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Search&quot;</span><span class="p">&gt;</span>
+
 <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;overwatchTable&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">thead</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;overwatchHead&quot;</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
@@ -181,7 +183,7 @@ window.onload = wrap_img;
         <span class="kd">var</span> <span class="nx">table</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#overwatchTable&#39;</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
             <span class="nx">paging</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable pagination</span>
             <span class="nx">ordering</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable sorting</span>
-            <span class="nx">searching</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Disable default searching</span>
+            <span class="nx">searching</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable searching</span>
             <span class="nx">lengthChange</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// Disable showing entries</span>
             <span class="nx">responsive</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Enable responsive design</span>
             <span class="c1">// Add additional options or callbacks as needed</span>
@@ -191,11 +193,6 @@ window.onload = wrap_img;
         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#searchBar&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
             <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
         <span class="p">});</span>
-
-        <span class="c1">// Custom search function</span>
-        <span class="kd">function</span> <span class="nx">customSearch</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">table</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">value</span><span class="p">).</span><span class="nx">draw</span><span class="p">();</span>
-        <span class="p">}</span>
 
         <span class="c1">// Override default DataTables search behavior</span>
         <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">dataTable</span><span class="p">.</span><span class="nx">ext</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">searchData</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">rowData</span><span class="p">,</span> <span class="nx">counter</span><span class="p">)</span> <span class="p">{</span>
@@ -225,6 +222,8 @@ window.onload = wrap_img;
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 
+<input type="text" id="searchBar" placeholder="Search" />
+
 <table id="overwatchTable" class="table" style="width:100%">
     <thead id="overwatchHead">
         <tr>
@@ -244,7 +243,12 @@ window.onload = wrap_img;
             { id: 1, name: "Tracer", role: "Damage", ultimate: "Pulse Bomb" },
             { id: 2, name: "Reinhardt", role: "Tank", ultimate: "Earthshatter" },
             { id: 3, name: "Mercy", role: "Support", ultimate: "Valkyrie" },
-            { id: 4, name: "Genji", role: "Damage", ultimate: "Dragonblade" }
+            { id: 4, name: "Genji", role: "Damage", ultimate: "Dragonblade" },
+            { id: 5, name: "Hanzo", role: "Damage", ultimate: "Dragonstrike" },
+            { id: 6, name: "Ashe", role: "Damage", ultimate: "B.O.B." },
+            { id: 7, name: "Doomfist", role: "Tank", ultimate: "Meteor Strike" },
+            { id: 8, name: "Orisa", role: "Tank", ultimate: "Terra Surge" },
+            { id: 9, name: "Moira", role: "Tank", ultimate: "Coalescence" },
             // Add more character objects as needed
         ];
 
@@ -261,7 +265,7 @@ window.onload = wrap_img;
         var table = $('#overwatchTable').DataTable({
             paging: true, // Enable pagination
             ordering: true, // Enable sorting
-            searching: true, // Disable default searching
+            searching: true, // Enable searching
             lengthChange: false, // Disable showing entries
             responsive: true, // Enable responsive design
             // Add additional options or callbacks as needed
@@ -271,11 +275,6 @@ window.onload = wrap_img;
         $('#searchBar').on('keyup', function() {
             table.search(this.value).draw();
         });
-
-        // Custom search function
-        function customSearch(value) {
-            table.search(value).draw();
-        }
 
         // Override default DataTables search behavior
         $.fn.dataTable.ext.search.push(function(settings, searchData, index, rowData, counter) {
